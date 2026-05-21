@@ -48,6 +48,11 @@
 @utility border-fg-muted  { border-color: rgb(var(--fg-muted)); }
 @utility border-accent    { border-color: rgb(var(--accent)); }
 
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
 body {
   background-color: rgb(var(--bg));
   color: rgb(var(--fg));

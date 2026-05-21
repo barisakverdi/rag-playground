@@ -1,0 +1,212 @@
+{
+  "Landing": {
+    "badge": "Portfolio demo · AI retrieval research",
+    "title": "Adaptive RAG Playground",
+    "subtitle": "Enterprise multi-document causal reasoning across operational reports. Watch semantic search and graph traversal compete on the same query — then see the auto-router explain why it chose each method.",
+    "tryDemo": "Try the Demo",
+    "viewSource": "View Source",
+    "githubLink": "GitHub →",
+    "features": {
+      "graphLabel": "Graph Traversal",
+      "graphDesc": "BFS across 201 entities and 175 relationships extracted from 8 operational documents.",
+      "compareLabel": "Comparison Mode",
+      "compareDesc": "Semantic and graph responses side by side — see which retrieval method wins and why.",
+      "decisionLabel": "Decision Log",
+      "decisionDesc": "Auto-router explains its choice: keyword signals, named entity count, and confidence."
+    },
+    "stats": {
+      "entities": "entities",
+      "relationships": "relationships",
+      "documents": "documents",
+      "queries": "sample queries"
+    },
+    "dataset": {
+      "sectionLabel": "THE DATASET",
+      "heading": "BrewPulse Coffee",
+      "p1": "Real enterprise knowledge looks like this: incident reports, supplier updates, customer feedback, staffing memos — scattered across systems, written by different people, never designed to be queried together.",
+      "p2Before": "BrewPulse Coffee simulates exactly that. The only way to answer",
+      "p2Question": "\"why did Leeds underperform in Q1?\"",
+      "p2After": "from these eight documents is to read all of them manually — or use RAG.",
+      "p3": "Synthetic corpus, manually curated. Full methodology and engineering decisions on the dataset page.",
+      "docsCta": "Full corpus documentation →",
+      "chainLabel": "THE CENTRAL CAUSAL CHAIN — Q20 DEMO HIGHLIGHT",
+      "chainNote": "No single document tells this story. Graph traversal reconstructs it; semantic search misses hops 2 and 3."
+    },
+    "footer": "Built by Mustafa Barış Akverdi · Senior Oracle APEX/DBA + AI developer · Reading, UK"
+  },
+  "Dataset": {
+    "navHome": "← Home",
+    "navCorpus": "Corpus",
+    "navCausal": "Causal Chain",
+    "navEntities": "Entities",
+    "navQueries": "Queries",
+    "navDesign": "Design",
+    "navMethodology": "Methodology",
+    "badge": "RAG Demo Dataset · v1.0",
+    "title": "BrewPulse",
+    "titleAccent": "Coffee",
+    "subtitle": "Synthetic operational corpus for Retrieval-Augmented Generation demos. Eight interconnected documents simulating a real enterprise knowledge base — where no single file answers any meaningful question alone.",
+    "methodologyNote": "AI-generated, manually curated. Designed with deliberate retrieval failure modes: indirect references, multi-hop causal chains, and ambiguous attribution.",
+    "stats": {
+      "corpusFiles": "Corpus Files",
+      "words": "Words",
+      "demoQueries": "Demo Queries",
+      "entities": "Entities",
+      "relationships": "Relationships",
+      "recurringEntities": "Recurring Entities"
+    },
+    "corpusTitle": "Corpus Structure",
+    "causalTitle": "The Central Causal Chain",
+    "causalDesc": "This four-hop chain spans four files — the kind of reasoning that requires multi-document retrieval to reconstruct. No single document tells this full story. This is Query 20 in the demo: the wow highlight.",
+    "causalChainLabel": "Wakefield depot failure → Google Review complaint",
+    "causalWhyMatters": "Why this matters:",
+    "causalWhyBody": "Graph traversal reconstructs the full chain by following entity links (NorthBrew → Wakefield → oat milk shortage → mobile order → complaint). Semantic search retrieves isolated fragments — it finds the complaint and the depot failure, but cannot reliably bridge all four hops.",
+    "entityTitle": "Entity Cross-Reference Map",
+    "entityDesc": "Named entities act as retrieval anchors. The more files an entity appears in, the more it can bridge unrelated-seeming documents during graph traversal.",
+    "entityColEntity": "Entity",
+    "entityColType": "Type",
+    "entityColFiles": "Referenced in Files",
+    "queriesTitle": "20 Demo Queries",
+    "queriesDesc": "All 20 questions require retrieval across multiple documents. None can be answered correctly from a single file. Grouped by theme for demo navigation.",
+    "queryGroupSupplier": "Supplier & Supply Chain",
+    "queryGroupEquipment": "Equipment & Maintenance",
+    "queryGroupMobile": "Mobile Ordering Rollout",
+    "queryGroupStaffing": "Staffing",
+    "queryGroupCx": "Customer Experience",
+    "queryGroupCross": "Cross-Document Reasoning",
+    "challengesTitle": "Retrieval Challenge Design",
+    "challengesDesc": "Six deliberate design properties ensure the dataset rewards multi-document retrieval and punishes naive keyword search or single-document lookup.",
+    "challenges": {
+      "indirect": {
+        "title": "Indirect References",
+        "desc": "Causes and effects are named differently across documents. The system must bridge vocabulary gaps semantically.",
+        "example": "\"Watery espresso\" complaints in file 04 ← valve pressure failure in file 02 — never explicitly linked."
+      },
+      "multiHop": {
+        "title": "Multi-Hop Causal Chains",
+        "desc": "The full cause-effect story spans 3–4 documents. Single-document retrieval gives an incomplete and potentially misleading answer.",
+        "example": "Wakefield depot → oat milk shortage → mobile order fail → Google Review. Files 03→01→08→04."
+      },
+      "attribution": {
+        "title": "Ambiguous Attribution",
+        "desc": "Some complaints could plausibly be blamed on the app, the supplier, or the equipment. Only multi-doc retrieval disambiguates.",
+        "example": "Was the Manchester oat milk complaint about the POS bug or the NorthBrew shortfall? Answer: both, in different weeks."
+      },
+      "timeline": {
+        "title": "Timeline References",
+        "desc": "February events appear in March documents as assumed context. The system must reconstruct timelines across report dates.",
+        "example": "The fault \"first noticed mid-February\" in file 02 is the same event described as a \"six-week issue\" in file 01."
+      },
+      "partial": {
+        "title": "Partial Information",
+        "desc": "Each document holds a piece of the puzzle. A correct answer requires synthesising fragments from 2–5 files.",
+        "example": "Leeds fault: described technically in 02, operationally in 01, impact in 04, fleet risk in 06, KPI outcome in 07."
+      },
+      "control": {
+        "title": "Control Case (Sheffield)",
+        "desc": "Sheffield's good performance is explained by a decision documented across two separate files — requiring synthesis to understand why.",
+        "example": "Rosa Chen's buffer stock decision (file 07) traces back to the Sep 2023 NorthBrew disruption (file 03)."
+      }
+    },
+    "methodologyTitle": "Dataset Methodology",
+    "methodologyDesc": "BrewPulse Coffee is synthetic — generated with Claude and manually curated. This is disclosed openly because the methodology itself demonstrates the engineering skill, not a limitation to hide.",
+    "methodology": {
+      "gen": {
+        "tag": "Generation",
+        "heading": "AI-assisted synthetic corpus design",
+        "body": "Documents were generated with Claude, co-designed with deliberate retrieval failure modes in mind. Entity recurrence, vocabulary gaps, and multi-hop dependencies were specified upfront — not left to chance."
+      },
+      "cur": {
+        "tag": "Curation",
+        "heading": "Manual curation and ground truth",
+        "body": "Each of the 20 queries has a manually verified ground truth mapping: expected files, expected retrieval method winner, and the reasoning. This enables precision/recall evaluation of any retrieval change."
+      },
+      "ext": {
+        "tag": "Extraction",
+        "heading": "Custom graph extractor (not off-shelf)",
+        "body": "Graphify v0.8.13 was tested and rejected — 30–40% entity recall and a streaming bug. A custom extractor was written using Claude tool use with domain-specific entity typology and confidence scoring. Build cost: $0.11."
+      },
+      "emb": {
+        "tag": "Embedding",
+        "heading": "File-level chunking via Voyage AI",
+        "body": "Documents are short (~640 words). File-level chunking is used — no sliding window needed. Voyage AI voyage-3 embeddings stored in pgvector on Supabase. Total embedding cost: $0.0004."
+      }
+    },
+    "docTypes": {
+      "ops": "Regional Ops Report",
+      "incident": "Incident Report",
+      "supplier": "Supplier Update",
+      "feedback": "Customer Feedback",
+      "staffing": "Staffing Issue",
+      "maintenance": "Maintenance Report",
+      "performance": "Performance Summary",
+      "logistics": "Logistics Report"
+    },
+    "entityTypes": {
+      "supplier": "supplier",
+      "person": "person",
+      "branch": "branch",
+      "incident": "incident",
+      "supply": "supply",
+      "technology": "technology",
+      "hr": "hr"
+    },
+    "ctaHeading": "Ready to explore the retrieval?",
+    "ctaDesc": "Try the 20 queries live — see graph vs semantic side by side.",
+    "ctaButton": "Try the Demo →",
+    "footer": "Built by Mustafa Barış Akverdi · Senior Oracle APEX/DBA + AI developer · Reading, UK"
+  },
+  "Playground": {
+    "title": "Adaptive RAG Playground",
+    "corpusLabel": "BrewPulse Coffee · North England ops",
+    "placeholder": "Ask about BrewPulse Coffee North England ops… (Ctrl+Enter)",
+    "modeSingle": "Single",
+    "modeCompare": "Compare",
+    "loading": "Loading",
+    "ask": "Ask →",
+    "emptyTitle": "Select a query from the sidebar or type your own.",
+    "emptyHint": "Try Q20 for a WOW graph traversal demo.",
+    "autoRouterLabel": "Auto router would choose:",
+    "answerLabel": "Answer",
+    "generating": "Generating answer…",
+    "hideExamples": "Hide examples",
+    "showExamples": "Show examples",
+    "footer": "Built by Mustafa Barış Akverdi · Senior Oracle APEX/DBA + AI developer · Reading, UK"
+  },
+  "Components": {
+    "ThemeToggle": {
+      "switchToContrast": "Switch to Dark Contrast",
+      "switchToCoffee": "Switch to Coffee theme",
+      "ariaLabel": "Toggle theme"
+    },
+    "PromptLibrary": {
+      "title": "20 Sample Queries"
+    },
+    "ComparisonPanel": {
+      "semanticLabel": "Semantic Search",
+      "graphLabel": "Graph Traversal",
+      "retrievedDocs": "Retrieved · {count} docs",
+      "embedTime": "embed {ms}ms",
+      "retrievalTime": "retrieval {ms}ms",
+      "generating": "Generating...",
+      "waiting": "Waiting..."
+    },
+    "MetricsPanel": {
+      "title": "LLM Metrics",
+      "inputTokens": "Input tokens",
+      "outputTokens": "Output tokens",
+      "estCost": "Est. cost",
+      "llmTime": "LLM time",
+      "modelInfo": "Claude Haiku 4.5 · $0.80/M input · $4.00/M output"
+    },
+    "DecisionLog": {
+      "title": "Auto Router Decision",
+      "seedEntities": "Seed Entities",
+      "retrievedDocs": "Retrieved Documents",
+      "timings": "Retrieval Timings",
+      "embedTime": "embed {ms}ms",
+      "semanticTime": "semantic {ms}ms",
+      "graphTime": "graph {ms}ms"
+    }
+  }
+}

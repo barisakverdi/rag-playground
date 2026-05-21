@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface Props {
   inputTokens: number;
   outputTokens: number;
@@ -8,24 +10,20 @@ interface Props {
 }
 
 export function MetricsPanel({ inputTokens, outputTokens, costUsd, llmMs }: Props) {
+  const t = useTranslations("Components.MetricsPanel");
+
   return (
     <div className="rounded-xl border border-border bg-bg-subtle p-4">
       <p className="mb-3 text-xs font-medium uppercase tracking-wider text-fg-subtle">
-        LLM Metrics
+        {t("title")}
       </p>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Metric label="Input tokens" value={inputTokens.toLocaleString()} />
-        <Metric label="Output tokens" value={outputTokens.toLocaleString()} />
-        <Metric
-          label="Est. cost"
-          value={`$${costUsd < 0.001 ? costUsd.toFixed(5) : costUsd.toFixed(4)}`}
-          accent="emerald"
-        />
-        {llmMs != null && <Metric label="LLM time" value={`${llmMs}ms`} />}
+        <Metric label={t("inputTokens")}  value={inputTokens.toLocaleString()} />
+        <Metric label={t("outputTokens")} value={outputTokens.toLocaleString()} />
+        <Metric label={t("estCost")} value={`$${costUsd < 0.001 ? costUsd.toFixed(5) : costUsd.toFixed(4)}`} accent="emerald" />
+        {llmMs != null && <Metric label={t("llmTime")} value={`${llmMs}ms`} />}
       </div>
-      <p className="mt-3 font-mono text-[11px] text-fg-subtle">
-        Claude Haiku 4.5 · $0.80/M input · $4.00/M output
-      </p>
+      <p className="mt-3 font-mono text-[11px] text-fg-subtle">{t("modelInfo")}</p>
     </div>
   );
 }

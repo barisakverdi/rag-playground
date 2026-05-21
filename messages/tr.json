@@ -1,0 +1,212 @@
+{
+  "Landing": {
+    "badge": "Portfolyo demo · YZ geri çağırma araştırması",
+    "title": "Adaptive RAG Playground",
+    "subtitle": "Operasyonel raporlar üzerinde çok belgeli nedensel çıkarım. Semantik arama ve graf geçişinin aynı sorguda rekabet etmesini izleyin — ardından otomatik yönlendiricinin seçim gerekçesini görün.",
+    "tryDemo": "Demoyu Dene",
+    "viewSource": "Kaynak Kodu",
+    "githubLink": "GitHub →",
+    "features": {
+      "graphLabel": "Graf Geçişi",
+      "graphDesc": "8 operasyonel belgeden çıkarılan 201 varlık ve 175 ilişki üzerinde BFS.",
+      "compareLabel": "Karşılaştırma Modu",
+      "compareDesc": "Semantik ve graf yanıtları yan yana — hangi geri çağırma yönteminin kazandığını ve neden görün.",
+      "decisionLabel": "Karar Günlüğü",
+      "decisionDesc": "Otomatik yönlendirici seçimini açıklar: anahtar kelime sinyalleri, varlık sayısı ve güven."
+    },
+    "stats": {
+      "entities": "varlık",
+      "relationships": "ilişki",
+      "documents": "belge",
+      "queries": "örnek sorgu"
+    },
+    "dataset": {
+      "sectionLabel": "VERİ SETİ",
+      "heading": "BrewPulse Coffee",
+      "p1": "Gerçek kurumsal bilgi şuna benziyor: olay raporları, tedarikçi güncellemeleri, müşteri geri bildirimleri, personel notları — sistemlere dağılmış, farklı kişiler tarafından yazılmış, hiçbir zaman birlikte sorgulanmak üzere tasarlanmamış.",
+      "p2Before": "BrewPulse Coffee tam olarak bunu simüle ediyor. Bu sekiz belgeden",
+      "p2Question": "\"Leeds Q1'de neden düşük performans gösterdi?\"",
+      "p2After": "sorusunu yanıtlamanın tek yolu hepsini manuel olarak okumak — ya da RAG kullanmak.",
+      "p3": "Sentetik veri seti, manuel olarak düzenlenmiş. Tam metodoloji ve mühendislik kararları veri seti sayfasında.",
+      "docsCta": "Tam veri seti dokümantasyonu →",
+      "chainLabel": "MERKEZI NEDENSEL ZİNCİR — Q20 DEMO ÖNE ÇIKANI",
+      "chainNote": "Hiçbir tek belge bu hikayeyi anlatmıyor. Graf geçişi onu yeniden oluşturur; semantik arama 2. ve 3. adımları kaçırır."
+    },
+    "footer": "Mustafa Barış Akverdi tarafından · Kıdemli Oracle APEX/DBA + YZ geliştirici · Reading, İngiltere"
+  },
+  "Dataset": {
+    "navHome": "← Ana Sayfa",
+    "navCorpus": "Veri Seti",
+    "navCausal": "Nedensel Zincir",
+    "navEntities": "Varlıklar",
+    "navQueries": "Sorgular",
+    "navDesign": "Tasarım",
+    "navMethodology": "Metodoloji",
+    "badge": "RAG Demo Veri Seti · v1.0",
+    "title": "BrewPulse",
+    "titleAccent": "Coffee",
+    "subtitle": "Geri çağırma başarısızlık modlarını ortaya koymak için tasarlanmış sentetik operasyonel veri seti. Gerçek bir kurumsal bilgi tabanını simüle eden sekiz birbiriyle bağlantılı belge.",
+    "methodologyNote": "YZ ile üretilmiş, manuel olarak düzenlenmiş. Kasıtlı geri çağırma başarısızlık modlarıyla tasarlandı: dolaylı referanslar, çok adımlı nedensel zincirler ve belirsiz atıf.",
+    "stats": {
+      "corpusFiles": "Veri Seti Dosyası",
+      "words": "Kelime",
+      "demoQueries": "Demo Sorgusu",
+      "entities": "Varlık",
+      "relationships": "İlişki",
+      "recurringEntities": "Tekrar Eden Varlık"
+    },
+    "corpusTitle": "Veri Seti Yapısı",
+    "causalTitle": "Merkezi Nedensel Zincir",
+    "causalDesc": "Bu dört adımlı zincir dört dosyaya yayılıyor — çok belgeli geri çağırma gerektiren bir çıkarım türü. Hiçbir tek belge bu hikayenin tamamını anlatmıyor. Bu, demodaki Sorgu 20: etkileyici nokta.",
+    "causalChainLabel": "Wakefield depo hatası → Google Review şikayeti",
+    "causalWhyMatters": "Neden önemli:",
+    "causalWhyBody": "Graf geçişi, varlık bağlantılarını takip ederek tam zinciri yeniden oluşturur (NorthBrew → Wakefield → oat milk açığı → mobil sipariş → şikayet). Semantik arama izole parçalar getirir — şikayeti ve depo hatasını bulur, ancak dört adımın tamamına köprü kuramaz.",
+    "entityTitle": "Varlık Çapraz Referans Haritası",
+    "entityDesc": "Adlandırılmış varlıklar geri çağırma çıpaları olarak işlev görür. Bir varlık ne kadar çok dosyada geçerse, graf geçişi sırasında ilgisiz görünen belgeleri o kadar iyi köprüleyebilir.",
+    "entityColEntity": "Varlık",
+    "entityColType": "Tür",
+    "entityColFiles": "Referans Verilen Dosyalar",
+    "queriesTitle": "20 Demo Sorgusu",
+    "queriesDesc": "20 sorunun tamamı birden fazla belge üzerinde geri çağırma gerektiriyor. Hiçbiri tek bir dosyadan doğru yanıtlanamaz. Demo navigasyonu için tema gruplarına ayrılmıştır.",
+    "queryGroupSupplier": "Tedarikçi ve Tedarik Zinciri",
+    "queryGroupEquipment": "Ekipman ve Bakım",
+    "queryGroupMobile": "Mobil Sipariş Lansmanı",
+    "queryGroupStaffing": "Personel",
+    "queryGroupCx": "Müşteri Deneyimi",
+    "queryGroupCross": "Çapraz Belge Çıkarımı",
+    "challengesTitle": "Geri Çağırma Zorluğu Tasarımı",
+    "challengesDesc": "Altı kasıtlı tasarım özelliği, veri setinin çok belgeli geri çağırmayı ödüllendirmesini ve basit anahtar kelime aramasını cezalandırmasını sağlar.",
+    "challenges": {
+      "indirect": {
+        "title": "Dolaylı Referanslar",
+        "desc": "Nedenler ve sonuçlar belgeler arasında farklı adlandırılıyor. Sistem, semantik olarak kelime dağarcığı boşluklarını köprülemek zorunda.",
+        "example": "04. dosyadaki \"sulu espresso\" şikayetleri ← 02. dosyadaki vana basıncı arızası — hiçbir zaman açıkça ilişkilendirilmemiş."
+      },
+      "multiHop": {
+        "title": "Çok Adımlı Nedensel Zincirler",
+        "desc": "Tam neden-sonuç hikayesi 3–4 belgeye yayılıyor. Tek belgeli geri çağırma eksik ve yanıltıcı yanıt verir.",
+        "example": "Wakefield depo → oat milk açığı → mobil sipariş hatası → Google Review. Dosyalar: 03→01→08→04."
+      },
+      "attribution": {
+        "title": "Belirsiz Atıf",
+        "desc": "Bazı şikayetler uygulamaya, tedarikçiye veya ekipmana makul olarak atfedilebilir. Yalnızca çok belgeli geri çağırma belirsizliği giderir.",
+        "example": "Manchester oat milk şikayeti POS hatası mıydı yoksa NorthBrew açığı mıydı? Yanıt: farklı haftalarda ikisi de."
+      },
+      "timeline": {
+        "title": "Zaman Çizelgesi Referansları",
+        "desc": "Şubat olayları, Mart belgelerinde varsayılan bağlam olarak geçiyor. Sistem, rapor tarihleri arasında zaman çizelgelerini yeniden oluşturmalı.",
+        "example": "02. dosyadaki \"Şubat ortasında ilk fark edilen\" arıza, 01. dosyada \"altı haftalık sorun\" olarak geçiyor."
+      },
+      "partial": {
+        "title": "Kısmi Bilgi",
+        "desc": "Her belge bulmacanın bir parçasını tutuyor. Doğru yanıt 2–5 dosyadan parçaların sentezini gerektiriyor.",
+        "example": "Leeds arızası: teknik olarak 02'de, operasyonel olarak 01'de, etkisi 04'te, filo riski 06'da, KPI sonucu 07'de."
+      },
+      "control": {
+        "title": "Kontrol Vakası (Sheffield)",
+        "desc": "Sheffield'ın iyi performansı, iki ayrı dosyada belgelenmiş bir kararla açıklanıyor — nedenini anlamak için sentez gerekiyor.",
+        "example": "Rosa Chen'in tampon stok kararı (dosya 07), Eyl 2023 NorthBrew kesintisine (dosya 03) dayanıyor."
+      }
+    },
+    "methodologyTitle": "Veri Seti Metodolojisi",
+    "methodologyDesc": "BrewPulse Coffee sentetiktir — Claude ile üretilmiş ve manuel olarak düzenlenmiştir. Bu açıkça belirtiliyor çünkü metodolojinin kendisi mühendislik becerisini gösteriyor, saklanacak bir eksiklik değil.",
+    "methodology": {
+      "gen": {
+        "tag": "Üretim",
+        "heading": "YZ destekli sentetik veri seti tasarımı",
+        "body": "Belgeler Claude ile üretildi, kasıtlı geri çağırma başarısızlık modları göz önünde bulundurularak birlikte tasarlandı. Varlık tekrarları, kelime dağarcığı boşlukları ve çok adımlı bağımlılıklar baştan belirtildi."
+      },
+      "cur": {
+        "tag": "Kürasyon",
+        "heading": "Manuel kürasyon ve ground truth",
+        "body": "20 sorgunun her biri için manuel olarak doğrulanmış ground truth eşlemesi var: beklenen dosyalar, kazanan yöntem ve gerekçe. Bu, herhangi bir geri çağırma değişikliğinin precision/recall değerlendirmesini mümkün kılıyor."
+      },
+      "ext": {
+        "tag": "Çıkarım",
+        "heading": "Özel graf çıkarıcı (hazır ürün değil)",
+        "body": "Graphify v0.8.13 test edildi ve reddedildi — %30–40 varlık recall ve bir streaming hatası. Alan adına özgü varlık tipolojisi ile Claude araç kullanımı kullanılarak özel bir çıkarıcı yazıldı. İnşa maliyeti: $0,11."
+      },
+      "emb": {
+        "tag": "Gömme",
+        "heading": "Voyage AI ile dosya düzeyinde öbekleme",
+        "body": "Belgeler kısa (~640 kelime). Dosya düzeyi öbekleme kullanılıyor — kayan pencere gerekmiyor. Voyage AI voyage-3 gömmeleri Supabase'deki pgvector'da saklanıyor. Toplam gömme maliyeti: $0,0004."
+      }
+    },
+    "docTypes": {
+      "ops": "Bölgesel Ops Raporu",
+      "incident": "Olay Raporu",
+      "supplier": "Tedarikçi Güncellemesi",
+      "feedback": "Müşteri Geri Bildirimi",
+      "staffing": "Personel Sorunu",
+      "maintenance": "Bakım Raporu",
+      "performance": "Performans Özeti",
+      "logistics": "Lojistik Raporu"
+    },
+    "entityTypes": {
+      "supplier": "tedarikçi",
+      "person": "kişi",
+      "branch": "şube",
+      "incident": "olay",
+      "supply": "tedarik",
+      "technology": "teknoloji",
+      "hr": "ik"
+    },
+    "ctaHeading": "Geri çağırmayı keşfetmeye hazır mısınız?",
+    "ctaDesc": "20 sorguyu canlı deneyin — graf ve semantik sonuçları yan yana görün.",
+    "ctaButton": "Demoyu Dene →",
+    "footer": "Mustafa Barış Akverdi tarafından · Kıdemli Oracle APEX/DBA + YZ geliştirici · Reading, İngiltere"
+  },
+  "Playground": {
+    "title": "Adaptive RAG Playground",
+    "corpusLabel": "BrewPulse Coffee · Kuzey İngiltere ops",
+    "placeholder": "BrewPulse Coffee Kuzey İngiltere operasyonları hakkında sorun… (Ctrl+Enter)",
+    "modeSingle": "Tekli",
+    "modeCompare": "Karşılaştır",
+    "loading": "Yükleniyor",
+    "ask": "Sor →",
+    "emptyTitle": "Kenar çubuğundan bir sorgu seçin veya kendi sorunuzu yazın.",
+    "emptyHint": "Etkileyici bir graf geçişi için Q20'yi deneyin.",
+    "autoRouterLabel": "Otomatik yönlendirici seçerdi:",
+    "answerLabel": "Yanıt",
+    "generating": "Yanıt oluşturuluyor…",
+    "hideExamples": "Örnekleri gizle",
+    "showExamples": "Örnekleri göster",
+    "footer": "Mustafa Barış Akverdi tarafından · Kıdemli Oracle APEX/DBA + YZ geliştirici · Reading, İngiltere"
+  },
+  "Components": {
+    "ThemeToggle": {
+      "switchToContrast": "Koyu kontrast'a geç",
+      "switchToCoffee": "Kahve temasına geç",
+      "ariaLabel": "Temayı değiştir"
+    },
+    "PromptLibrary": {
+      "title": "20 Örnek Sorgu"
+    },
+    "ComparisonPanel": {
+      "semanticLabel": "Semantik Arama",
+      "graphLabel": "Graf Geçişi",
+      "retrievedDocs": "Alındı · {count} belge",
+      "embedTime": "gömme {ms}ms",
+      "retrievalTime": "geri çağırma {ms}ms",
+      "generating": "Oluşturuluyor...",
+      "waiting": "Bekleniyor..."
+    },
+    "MetricsPanel": {
+      "title": "YZ Metrikleri",
+      "inputTokens": "Girdi token'ı",
+      "outputTokens": "Çıktı token'ı",
+      "estCost": "Tahmini maliyet",
+      "llmTime": "YZ süresi",
+      "modelInfo": "Claude Haiku 4.5 · $0,80/M girdi · $4,00/M çıktı"
+    },
+    "DecisionLog": {
+      "title": "Otomatik Yönlendirici Kararı",
+      "seedEntities": "Başlangıç Varlıkları",
+      "retrievedDocs": "Alınan Belgeler",
+      "timings": "Geri Çağırma Süreleri",
+      "embedTime": "gömme {ms}ms",
+      "semanticTime": "semantik {ms}ms",
+      "graphTime": "graf {ms}ms"
+    }
+  }
+}

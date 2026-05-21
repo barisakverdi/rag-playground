@@ -1,10 +1,12 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations("Components.ThemeToggle");
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   if (!mounted) return <div className="h-8 w-8" />;
@@ -15,8 +17,8 @@ export function ThemeToggle() {
     <button
       onClick={() => setTheme(isCoffee ? "contrast" : "coffee")}
       className="flex h-8 w-8 items-center justify-center rounded-md border border-border text-fg-subtle transition-colors hover:border-fg-subtle hover:text-fg"
-      title={isCoffee ? "Switch to Dark Contrast" : "Switch to Coffee theme"}
-      aria-label="Toggle theme"
+      title={isCoffee ? t("switchToContrast") : t("switchToCoffee")}
+      aria-label={t("ariaLabel")}
     >
       {isCoffee ? (
         /* Half-circle = contrast/high-contrast icon */
