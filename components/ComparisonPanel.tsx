@@ -96,8 +96,8 @@ function ComparisonSide({
       {/* Graph seed entities */}
       {data.matchedEntities && data.matchedEntities.length > 0 && (
         <div className="flex flex-wrap gap-1">
-          {data.matchedEntities.map((e) => (
-            <span key={e} className={`rounded px-1.5 py-0.5 text-[11px] ${entity}`}>
+          {data.matchedEntities.map((e, i) => (
+            <span key={`${e}-${i}`} className={`rounded px-1.5 py-0.5 text-[11px] ${entity}`}>
               {e}
             </span>
           ))}

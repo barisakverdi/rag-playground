@@ -109,7 +109,7 @@ export function graphSearch(
 
   return {
     results,
-    matchedEntities: seeds.map((e) => e.name),
+    matchedEntities: [...new Set(seeds.map((e) => e.name))],
     retrievalMs: Date.now() - start,
   };
 }

@@ -60,8 +60,8 @@ export function DecisionLog({ decision, retrievedDocs, graphEntities, timings }:
             Seed Entities
           </p>
           <div className="flex flex-wrap gap-1">
-            {graphEntities.map((e) => (
-              <span key={e} className="rounded bg-indigo-50 px-2 py-0.5 text-xs text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+            {graphEntities.map((e, i) => (
+              <span key={`${e}-${i}`} className="rounded bg-indigo-50 px-2 py-0.5 text-xs text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
                 {e}
               </span>
             ))}
