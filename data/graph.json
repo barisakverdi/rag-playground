@@ -1,0 +1,3518 @@
+{
+  "entities": [
+    {
+      "id": "person_sarah_mitchell",
+      "name": "Sarah Mitchell",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "role_regional_operations_manager",
+      "name": "Regional Operations Manager – North",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "role_head_of_operations",
+      "name": "Head of Operations",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "role_supply_chain_lead",
+      "name": "Supply Chain Lead",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "role_hr_business_partner",
+      "name": "HR Business Partner",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "branch_leeds_central",
+      "name": "Leeds Central",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "04_customer_feedback_north.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "branch_manchester_piccadilly",
+      "name": "Manchester Piccadilly",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "04_customer_feedback_north.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "branch_sheffield",
+      "name": "Sheffield",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "organisation_northbrew_supplies",
+      "name": "NorthBrew Supplies",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "04_customer_feedback_north.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "equipment_bar2_espresso_machine",
+      "name": "Bar 2 espresso machine",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "equipment_manchester_espresso_machines",
+      "name": "espresso machines at Manchester Piccadilly",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "incident_leeds_bar2_fault",
+      "name": "Bar 2 espresso machine pressure calibration issue",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "incident_wakefield_depot_failure",
+      "name": "Wakefield depot logistics disruption",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "incident_oat_milk_shortage",
+      "name": "60% oat milk allocation shortfall in first week of March",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "incident_mobile_ordering_modifier_sync",
+      "name": "mobile ordering modifier sync bug",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "incident_manchester_extraction_pressure",
+      "name": "inconsistent extraction pressure at Manchester Piccadilly",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_march_2024",
+      "name": "March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "04_customer_feedback_north.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_1_31_march_2024",
+      "name": "1–31 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "date_mid_february",
+      "name": "mid-February",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_28_february",
+      "name": "28 February",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_first_week_march",
+      "name": "first week of March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "date_4_march",
+      "name": "4 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_12_march",
+      "name": "12 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_19_march",
+      "name": "19 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_4_april",
+      "name": "4 April",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_8_march",
+      "name": "8 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_14_february",
+      "name": "14 February",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_28_march",
+      "name": "28 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_q1_2024",
+      "name": "Q1 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_end_of_april",
+      "name": "end of April",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "date_easter_trading",
+      "name": "Easter trading period",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "person_tom_okafor",
+      "name": "Tom Okafor",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "person_priya_nair",
+      "name": "Priya Nair",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "person_james_rowley",
+      "name": "James Rowley",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "06_maintenance_report_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "role_duty_manager",
+      "name": "Duty Manager",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "role_in_house_technician",
+      "name": "in-house technician",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "concept_customer_satisfaction_scores",
+      "name": "Customer satisfaction scores",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "concept_q1_service_targets",
+      "name": "Q1 service targets",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "concept_mobile_ordering_rollout",
+      "name": "mobile ordering rollout",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "04_customer_feedback_north.md",
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "concept_oat_milk_allocation",
+      "name": "oat milk allocation",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "depot_wakefield",
+      "name": "Wakefield depot",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "id": "region_north_england",
+      "name": "North England",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_inc_2024_0312",
+      "name": "INC-2024-0312",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "04_customer_feedback_north.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_15_february_2024",
+      "name": "15 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "date_12_march_2024",
+      "name": "12 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "person_daniel_park",
+      "name": "Daniel Park",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "equipment_la_marzocca_linea_pb",
+      "name": "La Marzocca Linea PB",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bp_lc_em02",
+      "name": "BP-LC-EM02",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bar_2_espresso_machine",
+      "name": "Bar 2 espresso machine",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "04_customer_feedback_north.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "person_chloe_barnes",
+      "name": "Chloe Barnes",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "person_marcus_webb",
+      "name": "Marcus Webb",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "incident_valve_seal_failure",
+      "name": "valve seal failure",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "date_17_february_2024",
+      "name": "17 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "date_20_february_2024",
+      "name": "20 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_22_february_2024",
+      "name": "22 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "date_28_february_2024",
+      "name": "28 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_5_march_2024",
+      "name": "5 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "organisation_brewpulse",
+      "name": "BrewPulse",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "concept_oat_milk_supply_disruption",
+      "name": "oat milk supply disruption",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "incident_northbrew_depot_issue",
+      "name": "NorthBrew Supplies depot issue",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "concept_staffing_shortfall",
+      "name": "staffing shortfall",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "date_first_week_march_2024",
+      "name": "first week of March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "equipment_bar_1_machine",
+      "name": "Bar 1 machine",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "concept_preventative_maintenance_schedule",
+      "name": "preventative maintenance schedule",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "id": "org_northbrew_supplies",
+      "name": "NorthBrew Supplies",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "org_brewpulse_coffee",
+      "name": "BrewPulse Coffee",
+      "type": "Organisation",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "org_greenleaf_provisions",
+      "name": "GreenLeaf Provisions",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "person_dominic_ferrara",
+      "name": "Dominic Ferrara",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "person_kevin_holt",
+      "name": "Kevin Holt",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "role_account_manager",
+      "name": "Account Manager",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "branch_sheffield_meadowhall",
+      "name": "Sheffield Meadowhall",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md",
+        "05_staffing_issues_north.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_northbrew_wakefield_disruption",
+      "name": "Wakefield depot logistics disruption",
+      "type": "Incident",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "incident_september_2023_shortfall",
+      "name": "September 2023 haulage partner shortfall",
+      "type": "Incident",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_15_march_2024",
+      "name": "15 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_8_march_2024",
+      "name": "8 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_11_march_2024",
+      "name": "11 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md",
+        "06_maintenance_report_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_9_march_2024",
+      "name": "9 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_week_26_feb_2024",
+      "name": "week commencing 26 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_week_4_march_2024",
+      "name": "week commencing 4 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_week_18_march_2024",
+      "name": "week commencing 18 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_22_march_2024",
+      "name": "22 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_5_april_2024",
+      "name": "5 April 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_january_2023",
+      "name": "January 2023",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_october_2023",
+      "name": "October 2023",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "date_september_2023",
+      "name": "September 2023",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "location_wakefield_depot",
+      "name": "Wakefield distribution depot",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "location_south_yorkshire",
+      "name": "South Yorkshire",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "concept_dual_sourcing_review",
+      "name": "dual-sourcing review",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_oat_flat_white",
+      "name": "oat flat white menu item",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "concept_supply_dependency",
+      "name": "supply dependency risk",
+      "type": "Concept",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "concept_sla_review",
+      "name": "SLA review",
+      "type": "Concept",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "id": "person_amara_osei",
+      "name": "Amara Osei",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "role_customer_experience_team",
+      "name": "Customer Experience Team",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "incident_bar_2_machine_failure",
+      "name": "Bar 2 machine failure",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "incident_modifier_sync_bug",
+      "name": "modifier sync problem",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_pos_integration_bug",
+      "name": "POS integration bug",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "incident_oat_milk_shortfall",
+      "name": "NorthBrew Supplies delivery shortfall",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "incident_pressure_issues_manchester",
+      "name": "pressure issues on Manchester Piccadilly machines",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "date_february_2024",
+      "name": "February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md",
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_18_19_march",
+      "name": "18 and 19 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "concept_oat_milk_unavailability",
+      "name": "Oat Milk Unavailability",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_espresso_quality_issues",
+      "name": "espresso quality issues",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "concept_mobile_ordering_problems",
+      "name": "mobile ordering problems",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "concept_wait_times_complaints",
+      "name": "wait times complaints",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "concept_staff_training_insufficiency",
+      "name": "staff training insufficiency",
+      "type": "Concept",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "concept_customer_dissatisfaction",
+      "name": "customer dissatisfaction",
+      "type": "Concept",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "id": "person_gemma_holroyd",
+      "name": "Gemma Holroyd",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "person_marcus_eaton",
+      "name": "Marcus Eaton",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "person_rosa_chen",
+      "name": "Rosa Chen",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "role_branch_manager",
+      "name": "Branch Manager",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "role_barista_grade_2",
+      "name": "Barista, Grade 2",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "role_senior_barista",
+      "name": "Senior Barista",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "branch_manchester",
+      "name": "Manchester",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "organisation_apex_staffing_solutions",
+      "name": "Apex Staffing Solutions",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "date_14_february_2024",
+      "name": "14 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "date_3_march_2024",
+      "name": "3 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "date_19_february_2024",
+      "name": "19 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "date_4_march_2024",
+      "name": "4 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_28_march_2024",
+      "name": "28 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_29_march_2024",
+      "name": "29 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "date_15_april_2024",
+      "name": "15 April 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "date_january_march_2024",
+      "name": "January–March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_shift_pattern_dissatisfaction",
+      "name": "shift pattern dissatisfaction",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "concept_pay_competitiveness",
+      "name": "Pay competitiveness",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "concept_staffing_gap",
+      "name": "staffing gap",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "concept_barista_pay_benchmarking",
+      "name": "barista pay benchmarking",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "organisation_head_of_people",
+      "name": "Head of People",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "organisation_regional_directors",
+      "name": "Regional Directors",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "id": "organisation_brewpulse_coffee",
+      "name": "BrewPulse Coffee",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "organisation_probev_engineering",
+      "name": "ProBev Engineering",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "organisation_thermalpro_services",
+      "name": "ThermalPro Services",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bp_lc_em01",
+      "name": "BP-LC-EM01",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bar_1_espresso_machine_leeds",
+      "name": "Bar 1 (BP-LC-EM01)",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bp_lc_gr01",
+      "name": "BP-LC-GR01",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_grinder_leeds",
+      "name": "Grinder (BP-LC-GR01)",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bp_mp_em01",
+      "name": "BP-MP-EM01",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bar_1_espresso_machine_manchester",
+      "name": "Bar 1 (BP-MP-EM01)",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bp_mp_em02",
+      "name": "BP-MP-EM02",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_bar_2_espresso_machine_manchester",
+      "name": "Bar 2 (BP-MP-EM02)",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "equipment_commercial_boiler_manchester",
+      "name": "Commercial boiler",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "incident_valve_seal_failure_leeds",
+      "name": "Valve seal failure – Leeds Bar 2",
+      "type": "Incident",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "incident_solenoid_valve_failure_manchester",
+      "name": "Solenoid valve failure – Manchester Bar 1",
+      "type": "Incident",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "incident_intermittent_pressure_manchester_bar2",
+      "name": "Intermittent extraction pressure – Manchester Bar 2",
+      "type": "Incident",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_27_february_2024",
+      "name": "27 February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_6_march_2024",
+      "name": "6 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_7_march_2024",
+      "name": "7 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_14_march_2024",
+      "name": "14 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_4_april_2024",
+      "name": "4 April 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_19_march_2024",
+      "name": "19 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_25_march_2024",
+      "name": "25 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_10_april_2024",
+      "name": "10 April 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_mid_february_2024",
+      "name": "Mid-February 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_june_2024",
+      "name": "June 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "concept_valve_seal_failure",
+      "name": "Valve seal failure",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "concept_solenoid_valve_failure",
+      "name": "Solenoid valve failure",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "concept_water_hardness_scale_accumulation",
+      "name": "Water hardness – scale accumulation",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "concept_end_of_life_component_review",
+      "name": "End-of-life component review",
+      "type": "Concept",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "id": "date_q4_2023",
+      "name": "Q4 2023",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_march_13_2024",
+      "name": "early March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_march_18_2024",
+      "name": "18 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_march_19_2024",
+      "name": "19 March",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_april_4_2024",
+      "name": "4 April",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "date_january_2024",
+      "name": "January",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_easter_trading_march_29",
+      "name": "Easter trading period (from 29 March)",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "role_regional_operations_manager_north",
+      "name": "Regional Operations Manager – North",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "equipment_espresso_machine_bar_2_leeds",
+      "name": "Bar 2 espresso machine",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "equipment_pos_system",
+      "name": "POS system",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_bar_2_espresso_fault_leeds",
+      "name": "espresso machine fault on Bar 2 at Leeds Central",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_valve_failure_pattern",
+      "name": "valve failure pattern across Leeds and Manchester Piccadilly La Marzocca units",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_espresso_pressure_issues_manchester",
+      "name": "espresso machine pressure issues at Manchester Piccadilly",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_northbrew_supplies_disruption_march_2024",
+      "name": "NorthBrew Supplies disruption affecting oat milk",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "incident_northbrew_supplies_disruption_september_2023",
+      "name": "NorthBrew Supplies disruption in September 2023",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_css_score",
+      "name": "Customer Satisfaction Score (CSS)",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_kpis",
+      "name": "operational KPIs",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_staffing_gaps",
+      "name": "staffing gaps",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_espresso_quality",
+      "name": "espresso quality",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "id": "concept_north_cohort",
+      "name": "North Cohort",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "concept_supply_chain_disruption",
+      "name": "Supply Chain Disruption",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "organisation_greenleaf_provisions",
+      "name": "GreenLeaf Provisions",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "organisation_orda",
+      "name": "Orda",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "organisation_square",
+      "name": "Square",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "branch_bristol",
+      "name": "Bristol",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "branch_edinburgh",
+      "name": "Edinburgh",
+      "type": "Branch",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "person_lena_frost",
+      "name": "Lena Frost",
+      "type": "Person",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "role_regional_managers",
+      "name": "Regional Managers",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "role_it_lead",
+      "name": "IT Lead",
+      "type": "Role",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "equipment_brewpulse_mobile_ordering_system",
+      "name": "BrewPulse Mobile Ordering System",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "equipment_square_pos",
+      "name": "Square POS",
+      "type": "Equipment",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "incident_modifier_sync_failure",
+      "name": "Modifier Sync Failure",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "incident_oat_milk_bug",
+      "name": "Oat Milk Bug",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "incident_northbrew_supplies_oat_milk_shortfall",
+      "name": "NorthBrew Supplies Oat Milk Shortfall",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "incident_training_readiness_issue",
+      "name": "Training Readiness Issue",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "incident_leeds_customer_complaints_oat_milk",
+      "name": "Leeds Central Oat Milk Customer Complaints",
+      "type": "Incident",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_18_march_2024",
+      "name": "18 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_1_march_2024",
+      "name": "1 March 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "date_may_2024",
+      "name": "May 2024",
+      "type": "Date",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "concept_midlands_cohort",
+      "name": "Midlands Cohort",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "concept_modifier_sync_testing",
+      "name": "Modifier Sync Testing",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "concept_real_time_menu_availability_sync",
+      "name": "Real-time Menu Availability Sync",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "concept_staff_training_protocol",
+      "name": "Staff Training Protocol",
+      "type": "Concept",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "id": "organisation_operations_integration_team",
+      "name": "Operations Integration Team",
+      "type": "Organisation",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "person_sarah_mitchell",
+      "target": "role_regional_operations_manager",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "branch_leeds_central",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "03_supplier_northbrew_oat_milk.md",
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "branch_manchester_piccadilly",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_leeds_bar2_fault",
+      "target": "branch_leeds_central",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_leeds_bar2_fault",
+      "target": "equipment_bar2_espresso_machine",
+      "type": "involves",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "equipment_bar2_espresso_machine",
+      "target": "branch_leeds_central",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_wakefield_depot_failure",
+      "target": "depot_wakefield",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_oat_milk_shortage",
+      "target": "incident_wakefield_depot_failure",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_oat_milk_shortage",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_oat_milk_shortage",
+      "target": "date_first_week_march",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "organisation_northbrew_supplies",
+      "target": "branch_leeds_central",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "02_incident_leeds_espresso_failure.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "organisation_northbrew_supplies",
+      "target": "branch_manchester_piccadilly",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_mobile_ordering_modifier_sync",
+      "target": "branch_manchester_piccadilly",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_manchester_extraction_pressure",
+      "target": "branch_manchester_piccadilly",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_manchester_extraction_pressure",
+      "target": "equipment_manchester_espresso_machines",
+      "type": "involves",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "equipment_manchester_espresso_machines",
+      "target": "branch_manchester_piccadilly",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "person_james_rowley",
+      "target": "role_duty_manager",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_manchester_extraction_pressure",
+      "target": "person_james_rowley",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "person_tom_okafor",
+      "target": "branch_leeds_central",
+      "type": "employed_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_priya_nair",
+      "target": "branch_leeds_central",
+      "type": "employed_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "01_north_regional_ops_report.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_priya_nair",
+      "target": "branch_sheffield",
+      "type": "transferred_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_oat_milk_shortage",
+      "target": "person_sarah_mitchell",
+      "type": "escalated_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "branch_leeds_central",
+      "target": "region_north_england",
+      "type": "located_at",
+      "confidence": "INFERRED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "branch_manchester_piccadilly",
+      "target": "region_north_england",
+      "type": "located_at",
+      "confidence": "INFERRED",
+      "source_files": [
+        "01_north_regional_ops_report.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "person_daniel_park",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "person_sarah_mitchell",
+      "type": "escalated_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "branch_leeds_central",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "equipment_bar_2_espresso_machine",
+      "target": "branch_leeds_central",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "04_customer_feedback_north.md",
+        "05_staffing_issues_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "equipment_bp_lc_em02",
+      "target": "equipment_bar_2_espresso_machine",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "equipment_la_marzocca_linea_pb",
+      "target": "equipment_bar_2_espresso_machine",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_valve_seal_failure",
+      "target": "incident_inc_2024_0312",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "incident_valve_seal_failure",
+      "type": "caused_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "person_chloe_barnes",
+      "target": "incident_inc_2024_0312",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "person_marcus_webb",
+      "target": "branch_leeds_central",
+      "type": "employed_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "person_daniel_park",
+      "target": "branch_leeds_central",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "region_north_england",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_depot_issue",
+      "target": "concept_oat_milk_supply_disruption",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "concept_staffing_shortfall",
+      "type": "compounded_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "concept_oat_milk_supply_disruption",
+      "target": "incident_inc_2024_0312",
+      "type": "compounded_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "equipment_bar_2_espresso_machine",
+      "type": "involves",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md",
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "organisation_brewpulse",
+      "target": "equipment_bar_2_espresso_machine",
+      "type": "supplies_to",
+      "confidence": "INFERRED",
+      "source_files": [
+        "02_incident_leeds_espresso_failure.md"
+      ]
+    },
+    {
+      "source": "org_northbrew_supplies",
+      "target": "branch_leeds_central",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "org_northbrew_supplies",
+      "target": "branch_manchester_piccadilly",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "org_northbrew_supplies",
+      "target": "branch_sheffield_meadowhall",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "org_greenleaf_provisions",
+      "target": "branch_leeds_central",
+      "type": "supplies_to",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "person_dominic_ferrara",
+      "target": "role_supply_chain_lead",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "person_kevin_holt",
+      "target": "role_account_manager",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "person_kevin_holt",
+      "target": "org_northbrew_supplies",
+      "type": "employed_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_wakefield_disruption",
+      "target": "location_wakefield_depot",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_wakefield_disruption",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_wakefield_disruption",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_wakefield_disruption",
+      "target": "branch_sheffield_meadowhall",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "person_sarah_mitchell",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "person_dominic_ferrara",
+      "type": "escalated_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_september_2023_shortfall",
+      "target": "org_northbrew_supplies",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "concept_oat_milk_allocation",
+      "target": "incident_northbrew_wakefield_disruption",
+      "type": "mentions_in",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "concept_dual_sourcing_review",
+      "target": "person_dominic_ferrara",
+      "type": "mentioned_in",
+      "confidence": "INFERRED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "concept_oat_flat_white",
+      "target": "date_october_2023",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_wakefield_disruption",
+      "target": "date_week_26_feb_2024",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "03_supplier_northbrew_oat_milk.md"
+      ]
+    },
+    {
+      "source": "person_amara_osei",
+      "target": "role_customer_experience_team",
+      "type": "employed_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "incident_bar_2_machine_failure",
+      "target": "incident_inc_2024_0312",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "incident_bar_2_machine_failure",
+      "target": "branch_leeds_central",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_espresso_quality_issues",
+      "target": "incident_bar_2_machine_failure",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "incident_oat_milk_shortfall",
+      "target": "organisation_northbrew_supplies",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_oat_milk_unavailability",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_oat_milk_unavailability",
+      "target": "incident_oat_milk_shortfall",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_bug",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_problems",
+      "target": "incident_modifier_sync_bug",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_problems",
+      "target": "incident_pos_integration_bug",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_problems",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_staff_training_insufficiency",
+      "target": "concept_mobile_ordering_rollout",
+      "type": "caused_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "incident_pressure_issues_manchester",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_espresso_quality_issues",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_espresso_quality_issues",
+      "target": "incident_pressure_issues_manchester",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_customer_dissatisfaction",
+      "target": "concept_espresso_quality_issues",
+      "type": "compounded_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_customer_dissatisfaction",
+      "target": "concept_oat_milk_unavailability",
+      "type": "compounded_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_customer_dissatisfaction",
+      "target": "concept_mobile_ordering_problems",
+      "type": "compounded_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "concept_customer_dissatisfaction",
+      "target": "concept_wait_times_complaints",
+      "type": "compounded_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "person_amara_osei",
+      "target": "branch_leeds_central",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "person_amara_osei",
+      "target": "branch_manchester_piccadilly",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "04_customer_feedback_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "branch_sheffield_meadowhall",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "person_gemma_holroyd",
+      "target": "role_hr_business_partner",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_tom_okafor",
+      "target": "role_barista_grade_2",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_tom_okafor",
+      "target": "date_14_february_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_tom_okafor",
+      "target": "organisation_brewpulse",
+      "type": "employed_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_priya_nair",
+      "target": "role_senior_barista",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_priya_nair",
+      "target": "branch_sheffield_meadowhall",
+      "type": "transferred_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_priya_nair",
+      "target": "date_3_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_marcus_eaton",
+      "target": "branch_sheffield_meadowhall",
+      "type": "employed_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "person_rosa_chen",
+      "target": "branch_sheffield_meadowhall",
+      "type": "manages",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "branch_leeds_central",
+      "target": "organisation_apex_staffing_solutions",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "concept_staffing_gap",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "concept_staffing_gap",
+      "target": "branch_sheffield_meadowhall",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "concept_shift_pattern_dissatisfaction",
+      "target": "person_tom_okafor",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "concept_shift_pattern_dissatisfaction",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "concept_pay_competitiveness",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_rollout",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_rollout",
+      "target": "branch_sheffield_meadowhall",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "branch_leeds_central",
+      "target": "date_19_february_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "branch_leeds_central",
+      "target": "date_4_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "branch_leeds_central",
+      "target": "date_28_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "05_staffing_issues_north.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "person_marcus_webb",
+      "type": "reported_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_valve_seal_failure_leeds",
+      "target": "equipment_bp_lc_em02",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_solenoid_valve_failure_manchester",
+      "target": "equipment_bp_mp_em01",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_intermittent_pressure_manchester_bar2",
+      "target": "equipment_bp_mp_em02",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_marcus_webb",
+      "target": "branch_leeds_central",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_marcus_webb",
+      "target": "branch_manchester_piccadilly",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_marcus_webb",
+      "target": "branch_sheffield_meadowhall",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_bp_lc_em02",
+      "target": "branch_leeds_central",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_bp_lc_em01",
+      "target": "branch_leeds_central",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_bp_lc_gr01",
+      "target": "branch_leeds_central",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_bp_mp_em01",
+      "target": "branch_manchester_piccadilly",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_bp_mp_em02",
+      "target": "branch_manchester_piccadilly",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_commercial_boiler_manchester",
+      "target": "branch_manchester_piccadilly",
+      "type": "located_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "branch_leeds_central",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "branch_manchester_piccadilly",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "branch_sheffield_meadowhall",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_inc_2024_0312",
+      "target": "date_mid_february_2024",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_valve_seal_failure_leeds",
+      "target": "person_marcus_webb",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_james_rowley",
+      "target": "branch_manchester_piccadilly",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_solenoid_valve_failure_manchester",
+      "target": "person_james_rowley",
+      "type": "reported_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "organisation_probev_engineering",
+      "target": "equipment_bp_lc_em02",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "organisation_thermalpro_services",
+      "target": "branch_manchester_piccadilly",
+      "type": "supplies_to",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_la_marzocca_linea_pb",
+      "target": "branch_leeds_central",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "equipment_la_marzocca_linea_pb",
+      "target": "branch_manchester_piccadilly",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_valve_seal_failure_leeds",
+      "target": "date_27_february_2024",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "incident_solenoid_valve_failure_manchester",
+      "target": "date_4_april_2024",
+      "type": "mentioned_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "concept_water_hardness_scale_accumulation",
+      "target": "incident_intermittent_pressure_manchester_bar2",
+      "type": "compounded_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "06_maintenance_report_north.md"
+      ]
+    },
+    {
+      "source": "person_sarah_mitchell",
+      "target": "role_regional_operations_manager_north",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "person_amara_osei",
+      "target": "branch_leeds_central",
+      "type": "employed_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "person_dominic_ferrara",
+      "target": "concept_dual_sourcing_review",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_bar_2_espresso_fault_leeds",
+      "target": "branch_leeds_central",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_bar_2_espresso_fault_leeds",
+      "target": "equipment_espresso_machine_bar_2_leeds",
+      "type": "involves",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_espresso_pressure_issues_manchester",
+      "target": "branch_manchester_piccadilly",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_valve_failure_pattern",
+      "target": "equipment_la_marzocca_linea_pb",
+      "type": "involves",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_valve_failure_pattern",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_valve_failure_pattern",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_bug",
+      "target": "branch_manchester_piccadilly",
+      "type": "occurred_at",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_bug",
+      "target": "equipment_pos_system",
+      "type": "involves",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_disruption_march_2024",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_disruption_march_2024",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_disruption_september_2023",
+      "target": "branch_sheffield_meadowhall",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_disruption_march_2024",
+      "target": "organisation_northbrew_supplies",
+      "type": "caused_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "concept_espresso_quality",
+      "target": "incident_bar_2_espresso_fault_leeds",
+      "type": "caused_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "concept_oat_milk_unavailability",
+      "target": "incident_northbrew_supplies_disruption_march_2024",
+      "type": "caused_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "organisation_northbrew_supplies",
+      "target": "branch_sheffield_meadowhall",
+      "type": "supplies_to",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "region_north_england",
+      "target": "branch_leeds_central",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "region_north_england",
+      "target": "branch_manchester_piccadilly",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "region_north_england",
+      "target": "branch_sheffield_meadowhall",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_rollout",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md",
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_bug",
+      "target": "concept_mobile_ordering_rollout",
+      "type": "caused_by",
+      "confidence": "INFERRED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "branch_sheffield_meadowhall",
+      "target": "person_rosa_chen",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "07_regional_performance_q1_north.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_failure",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_failure",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_oat_milk_bug",
+      "target": "incident_modifier_sync_failure",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "person_lena_frost",
+      "target": "organisation_operations_integration_team",
+      "type": "employed_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "person_james_rowley",
+      "target": "branch_manchester_piccadilly",
+      "type": "manages",
+      "confidence": "INFERRED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_rollout",
+      "target": "branch_bristol",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "concept_mobile_ordering_rollout",
+      "target": "branch_edinburgh",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_oat_milk_shortfall",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_oat_milk_shortfall",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_northbrew_supplies_oat_milk_shortfall",
+      "target": "concept_mobile_ordering_rollout",
+      "type": "compounded_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_failure",
+      "target": "equipment_brewpulse_mobile_ordering_system",
+      "type": "affects",
+      "confidence": "INFERRED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "equipment_brewpulse_mobile_ordering_system",
+      "target": "organisation_orda",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "equipment_brewpulse_mobile_ordering_system",
+      "target": "equipment_square_pos",
+      "type": "references",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_training_readiness_issue",
+      "target": "branch_manchester_piccadilly",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_training_readiness_issue",
+      "target": "person_james_rowley",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_leeds_customer_complaints_oat_milk",
+      "target": "branch_leeds_central",
+      "type": "affects",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_leeds_customer_complaints_oat_milk",
+      "target": "incident_northbrew_supplies_oat_milk_shortfall",
+      "type": "caused_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "person_dominic_ferrara",
+      "target": "incident_northbrew_supplies_oat_milk_shortfall",
+      "type": "reported_by",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_failure",
+      "target": "date_7_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "incident_modifier_sync_failure",
+      "target": "date_18_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "branch_manchester_piccadilly",
+      "target": "date_4_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "branch_leeds_central",
+      "target": "date_11_march_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    },
+    {
+      "source": "concept_midlands_cohort",
+      "target": "date_may_2024",
+      "type": "mentions_in",
+      "confidence": "EXTRACTED",
+      "source_files": [
+        "08_logistics_mobile_ordering_disruption.md"
+      ]
+    }
+  ],
+  "meta": {
+    "extracted_at": "2026-05-21T12:51:23.646Z",
+    "total_cost_usd": 0.11295360000000002,
+    "files_processed": [
+      "01_north_regional_ops_report.md",
+      "02_incident_leeds_espresso_failure.md",
+      "03_supplier_northbrew_oat_milk.md",
+      "04_customer_feedback_north.md",
+      "05_staffing_issues_north.md",
+      "06_maintenance_report_north.md",
+      "07_regional_performance_q1_north.md",
+      "08_logistics_mobile_ordering_disruption.md"
+    ]
+  }
+}

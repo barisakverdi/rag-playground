@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "query": "What impact did NorthBrew Supplies have across branches in Q1 2024?",
+    "expected_files": ["03_supplier_northbrew_oat_milk.md", "04_customer_feedback_north.md", "07_regional_performance_q1_north.md", "08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "graph",
+    "reason": "Entity-centric — NorthBrew connects to all branches and incidents"
+  },
+  {
+    "id": 2,
+    "query": "Which branches were affected by the oat milk shortage and what were the consequences?",
+    "expected_files": ["03_supplier_northbrew_oat_milk.md", "04_customer_feedback_north.md", "07_regional_performance_q1_north.md", "08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "graph",
+    "reason": "Multi-document causal chain across supplier, feedback, and performance docs"
+  },
+  {
+    "id": 3,
+    "query": "Had NorthBrew Supplies caused problems before the Q1 2024 incident?",
+    "expected_files": ["03_supplier_northbrew_oat_milk.md"],
+    "winning_method": "semantic",
+    "reason": "Single document passage lookup"
+  },
+  {
+    "id": 4,
+    "query": "What steps were recommended to reduce dependency on NorthBrew Supplies?",
+    "expected_files": ["03_supplier_northbrew_oat_milk.md", "07_regional_performance_q1_north.md"],
+    "winning_method": "semantic",
+    "reason": "Theme-based match within supplier and performance reports"
+  },
+  {
+    "id": 5,
+    "query": "Which branches experienced espresso machine failures and what was the common cause?",
+    "expected_files": ["02_incident_leeds_espresso_failure.md", "06_maintenance_report_north.md", "07_regional_performance_q1_north.md"],
+    "winning_method": "semantic",
+    "reason": "Theme-based retrieval across incident and maintenance docs"
+  },
+  {
+    "id": 6,
+    "query": "What is the relationship between the equipment fault at Leeds and the one at Manchester?",
+    "expected_files": ["02_incident_leeds_espresso_failure.md", "06_maintenance_report_north.md"],
+    "winning_method": "graph",
+    "reason": "Causal chain — same valve class failure across branches"
+  },
+  {
+    "id": 7,
+    "query": "Is there a risk that espresso machine failures could recur at other branches?",
+    "expected_files": ["06_maintenance_report_north.md", "07_regional_performance_q1_north.md"],
+    "winning_method": "semantic",
+    "reason": "Pattern observation across maintenance and performance reports"
+  },
+  {
+    "id": 8,
+    "query": "Which branches have outstanding maintenance items and what is the highest risk?",
+    "expected_files": ["06_maintenance_report_north.md"],
+    "winning_method": "semantic",
+    "reason": "Single document table lookup"
+  },
+  {
+    "id": 9,
+    "query": "What operational problems followed the mobile ordering rollout?",
+    "expected_files": ["04_customer_feedback_north.md", "07_regional_performance_q1_north.md", "08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "semantic",
+    "reason": "Theme match across feedback and logistics documents"
+  },
+  {
+    "id": 10,
+    "query": "The oat milk modifier bug lasted two weeks — what was the customer impact?",
+    "expected_files": ["04_customer_feedback_north.md", "08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "graph",
+    "reason": "Cross-document link: bug report + customer complaints"
+  },
+  {
+    "id": 11,
+    "query": "How did the mobile ordering rollout timing compound other operational issues?",
+    "expected_files": ["01_north_regional_ops_report.md", "05_staffing_issues_north.md", "07_regional_performance_q1_north.md", "08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "graph",
+    "reason": "Multi-event causal chain across ops, staffing, performance, and logistics"
+  },
+  {
+    "id": 12,
+    "query": "What should be done differently before rolling out mobile ordering to Midlands?",
+    "expected_files": ["08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "semantic",
+    "reason": "Recommendations section within single document"
+  },
+  {
+    "id": 13,
+    "query": "Which branches had staffing shortages in Q1 2024?",
+    "expected_files": ["05_staffing_issues_north.md"],
+    "winning_method": "semantic",
+    "reason": "Single document lookup"
+  },
+  {
+    "id": 14,
+    "query": "How did understaffing compound the equipment failure at Leeds Central?",
+    "expected_files": ["02_incident_leeds_espresso_failure.md", "05_staffing_issues_north.md"],
+    "winning_method": "graph",
+    "reason": "Compound causal link between staffing and equipment incident"
+  },
+  {
+    "id": 15,
+    "query": "What are the staffing risks going into Easter trading?",
+    "expected_files": ["05_staffing_issues_north.md", "07_regional_performance_q1_north.md"],
+    "winning_method": "semantic",
+    "reason": "Forward-looking theme match"
+  },
+  {
+    "id": 16,
+    "query": "Where do staffing issues and customer complaints overlap?",
+    "expected_files": ["04_customer_feedback_north.md", "05_staffing_issues_north.md"],
+    "winning_method": "graph",
+    "reason": "Cross-entity relationship between staff shortages and complaint patterns"
+  },
+  {
+    "id": 17,
+    "query": "How did the espresso machine fault lead to drink quality complaints?",
+    "expected_files": ["02_incident_leeds_espresso_failure.md", "04_customer_feedback_north.md", "06_maintenance_report_north.md"],
+    "winning_method": "graph",
+    "reason": "Indirect causal reference: fault → under-extraction → complaints"
+  },
+  {
+    "id": 18,
+    "query": "Which customer complaints were caused by supplier issues versus branch operational failures?",
+    "expected_files": ["03_supplier_northbrew_oat_milk.md", "04_customer_feedback_north.md"],
+    "winning_method": "graph",
+    "reason": "Attribution analysis requiring cross-entity reasoning"
+  },
+  {
+    "id": 19,
+    "query": "What is the most significant systemic risk facing the North England region?",
+    "expected_files": ["01_north_regional_ops_report.md", "03_supplier_northbrew_oat_milk.md", "07_regional_performance_q1_north.md", "08_logistics_mobile_ordering_disruption.md"],
+    "winning_method": "hybrid",
+    "reason": "Synthesis question requiring both semantic understanding and cross-document reasoning"
+  },
+  {
+    "id": 20,
+    "query": "Trace the full chain from the Wakefield depot failure to the Google Reviews impact",
+    "expected_files": ["03_supplier_northbrew_oat_milk.md", "08_logistics_mobile_ordering_disruption.md", "04_customer_feedback_north.md"],
+    "winning_method": "graph",
+    "reason": "DEMO WOW: full causal chain — Wakefield depot → oat milk shortage → modifier bug → customer complaints → reviews"
+  }
+]
