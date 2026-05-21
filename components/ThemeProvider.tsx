@@ -1,11 +1,3 @@
 "use client";
 
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  return (
-    <NextThemesProvider attribute="data-theme" defaultTheme="coffee" themes={["coffee", "contrast"]}>
-      {children}
-    </NextThemesProvider>
-  );
-}
+export { ThemeProvider } from "./ThemeContext";

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "next-themes";
+import { useTheme } from "@/components/ThemeContext";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
