@@ -57,7 +57,6 @@ export default function PlaygroundPage() {
   const [compareResult, setCompareResult] = useState<CompareResult | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const abortRef = useRef<AbortController | null>(null);
-  const llmStartRef = useRef<number>(0);
 
   const handleSelect = useCallback((q: string) => {
     setQuery(q);
@@ -72,7 +71,6 @@ export default function PlaygroundPage() {
     setError("");
     setSingleResult(null);
     setCompareResult(null);
-    llmStartRef.current = Date.now();
 
     try {
       if (mode === "single") {
@@ -207,21 +205,21 @@ export default function PlaygroundPage() {
   };
 
   return (
-    <div className="flex h-[100dvh] flex-col overflow-hidden bg-white dark:bg-zinc-950">
+    <div className="flex h-[100dvh] flex-col overflow-hidden bg-bg">
       {/* Navbar */}
-      <header className="shrink-0 border-b border-zinc-200 px-3 py-2.5 dark:border-zinc-800 sm:px-4 sm:py-3">
+      <header className="shrink-0 border-b border-border px-3 py-2.5 sm:px-4 sm:py-3">
         <div className="flex items-center justify-between gap-2">
           <div className="flex min-w-0 items-center gap-2 sm:gap-3">
-            <Link href="/" className="shrink-0 text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100">
+            <Link href="/" className="shrink-0 text-sm text-fg-muted transition-colors hover:text-fg">
               ←
             </Link>
-            <span className="text-zinc-300 dark:text-zinc-700">|</span>
-            <span className="truncate font-mono text-xs font-medium text-zinc-900 dark:text-zinc-200 sm:text-sm">
+            <span className="text-fg-subtle">|</span>
+            <span className="truncate font-mono text-xs font-medium text-fg sm:text-sm">
               Adaptive RAG Playground
             </span>
           </div>
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-            <span className="hidden font-mono text-xs text-zinc-400 dark:text-zinc-600 lg:inline">
+            <span className="hidden font-mono text-xs text-fg-subtle lg:inline">
               BrewPulse Coffee · North England ops
             </span>
             <ThemeToggle />
@@ -229,7 +227,7 @@ export default function PlaygroundPage() {
               href="https://github.com/barisakverdi/rag-playground"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden text-xs text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-300 sm:inline"
+              className="hidden text-xs text-fg-subtle transition-colors hover:text-fg-muted sm:inline"
             >
               GitHub
             </a>
@@ -238,9 +236,9 @@ export default function PlaygroundPage() {
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar — hidden on mobile by default */}
+        {/* Sidebar */}
         <aside
-          className={`shrink-0 overflow-y-auto border-r border-zinc-200 bg-zinc-50 transition-all duration-200 dark:border-zinc-800 dark:bg-zinc-900/30 ${
+          className={`shrink-0 overflow-y-auto border-r border-border bg-bg-subtle transition-all duration-200 ${
             sidebarOpen ? "w-64 sm:w-72" : "w-0"
           }`}
         >
@@ -254,12 +252,12 @@ export default function PlaygroundPage() {
         {/* Main */}
         <main className="flex flex-1 flex-col overflow-hidden">
           {/* Query input area */}
-          <div className="shrink-0 border-b border-zinc-200 bg-white px-3 py-3 dark:border-zinc-800 dark:bg-zinc-950 sm:px-4">
+          <div className="shrink-0 border-b border-border bg-bg px-3 py-3 sm:px-4">
             {/* Row 1: toggle + textarea */}
             <div className="flex gap-2">
               <button
                 onClick={() => setSidebarOpen((v) => !v)}
-                className="shrink-0 self-start rounded-lg border border-zinc-300 p-2 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                className="shrink-0 self-start rounded-lg border border-border p-2 text-fg-subtle transition-colors hover:bg-bg-subtle hover:text-fg"
                 title={sidebarOpen ? "Hide examples" : "Show examples"}
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -272,20 +270,20 @@ export default function PlaygroundPage() {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask about BrewPulse Coffee North England ops… (Ctrl+Enter)"
-                className="min-h-[52px] flex-1 resize-none rounded-lg border border-zinc-300 bg-zinc-50 px-3 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-indigo-400 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:border-zinc-500"
+                className="min-h-[52px] flex-1 resize-none rounded-lg border border-border bg-bg-input px-3 py-2.5 text-sm text-fg placeholder:text-fg-subtle focus:border-accent focus:outline-none"
                 rows={2}
               />
             </div>
 
             {/* Row 2: mode toggle + submit */}
             <div className="mt-2 flex items-center gap-2">
-              <div className="flex overflow-hidden rounded-lg border border-zinc-300 dark:border-zinc-700">
+              <div className="flex overflow-hidden rounded-lg border border-border">
                 <button
                   onClick={() => setMode("single")}
                   className={`px-3 py-1.5 text-xs font-medium transition-colors ${
                     mode === "single"
-                      ? "bg-zinc-200 text-zinc-900 dark:bg-zinc-700 dark:text-zinc-100"
-                      : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-300"
+                      ? "bg-bg-input text-fg"
+                      : "text-fg-subtle hover:text-fg-muted"
                   }`}
                 >
                   Single
@@ -294,8 +292,8 @@ export default function PlaygroundPage() {
                   onClick={() => setMode("compare")}
                   className={`px-3 py-1.5 text-xs font-medium transition-colors ${
                     mode === "compare"
-                      ? "bg-zinc-200 text-zinc-900 dark:bg-zinc-700 dark:text-zinc-100"
-                      : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-300"
+                      ? "bg-bg-input text-fg"
+                      : "text-fg-subtle hover:text-fg-muted"
                   }`}
                 >
                   Compare
@@ -305,7 +303,7 @@ export default function PlaygroundPage() {
               <button
                 onClick={handleSubmit}
                 disabled={!query.trim() || status === "loading"}
-                className="ml-auto rounded-lg bg-indigo-600 px-5 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-40"
+                className="ml-auto rounded-lg bg-accent px-5 py-1.5 text-sm font-semibold text-accent-fg transition-colors hover:bg-accent-h disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {status === "loading" ? (
                   <span className="flex items-center gap-2">
@@ -323,17 +321,17 @@ export default function PlaygroundPage() {
           <div className="flex-1 overflow-y-auto p-3 sm:p-4">
             {status === "idle" && (
               <div className="flex h-full flex-col items-center justify-center text-center">
-                <p className="text-sm text-zinc-500 dark:text-zinc-600">
+                <p className="text-sm text-fg-subtle">
                   Select a query from the sidebar or type your own.
                 </p>
-                <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-700">
+                <p className="mt-1 text-xs text-fg-subtle">
                   Try Q20 for a WOW graph traversal demo.
                 </p>
               </div>
             )}
 
             {status === "error" && (
-              <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-700 dark:border-red-800 dark:bg-red-950/30 dark:text-red-300">
+              <div className="rounded-xl border border-red-800 bg-red-950/40 p-4 text-sm text-red-300">
                 Error: {error}
               </div>
             )}
@@ -349,20 +347,26 @@ export default function PlaygroundPage() {
                 />
 
                 {/* Answer */}
-                <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900/50">
-                  <p className="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                <div className="rounded-xl border border-border bg-bg-subtle p-4">
+                  <p className="mb-3 text-xs font-medium uppercase tracking-wider text-fg-subtle">
                     Answer
                   </p>
                   {singleResult.answer ? (
-                    <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
+                    <p className="whitespace-pre-wrap text-sm leading-relaxed text-fg">
                       {singleResult.answer}
                       {status === "loading" && (
-                        <span className="ml-1 inline-block h-4 w-0.5 animate-pulse bg-zinc-400" />
+                        <span className="ml-1 inline-block h-4 w-0.5 animate-pulse bg-fg-subtle" />
                       )}
                     </p>
                   ) : (
-                    <div className="flex items-center gap-2 text-sm text-zinc-400 dark:text-zinc-600">
-                      <span className="h-3 w-3 animate-spin rounded-full border border-zinc-300 border-t-zinc-600 dark:border-zinc-700 dark:border-t-zinc-400" />
+                    <div className="flex items-center gap-2 text-sm text-fg-subtle">
+                      <span
+                        className="h-3 w-3 animate-spin rounded-full border"
+                        style={{
+                          borderColor: "rgb(var(--border))",
+                          borderTopColor: "rgb(var(--fg-muted))",
+                        }}
+                      />
                       Generating answer…
                     </div>
                   )}
@@ -381,21 +385,21 @@ export default function PlaygroundPage() {
             {/* Compare mode results */}
             {mode === "compare" && compareResult && (
               <div className="space-y-4">
-                <div className="rounded-xl border border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/50">
+                <div className="rounded-xl border border-border bg-bg-subtle px-4 py-3">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs text-zinc-500">Auto router would choose:</span>
+                    <span className="text-xs text-fg-subtle">Auto router would choose:</span>
                     <span
                       className={`rounded border px-2 py-0.5 font-mono text-xs font-semibold uppercase ${
                         compareResult.decision.method === "graph"
-                          ? "border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
+                          ? "border-indigo-700 bg-indigo-950/50 text-indigo-300"
                           : compareResult.decision.method === "semantic"
-                          ? "border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
-                          : "border-amber-300 bg-amber-50 text-amber-700 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-300"
+                          ? "border-emerald-700 bg-emerald-950/50 text-emerald-300"
+                          : "border-amber-700 bg-amber-950/50 text-amber-300"
                       }`}
                     >
                       {compareResult.decision.method}
                     </span>
-                    <span className="text-xs text-zinc-600 dark:text-zinc-400">{compareResult.decision.reason}</span>
+                    <span className="text-xs text-fg-muted">{compareResult.decision.reason}</span>
                   </div>
                 </div>
 

@@ -18,9 +18,9 @@ test.describe("Landing page", () => {
   test("theme toggle works", async ({ page }) => {
     await page.goto("/");
     const html = page.locator("html");
-    await expect(html).toHaveClass(/dark/);
+    await expect(html).toHaveAttribute("data-theme", "coffee");
     await page.getByRole("button", { name: /toggle theme/i }).click();
-    await expect(html).not.toHaveClass(/dark/);
+    await expect(html).toHaveAttribute("data-theme", "contrast");
   });
 
   test("navigates to playground", async ({ page }) => {

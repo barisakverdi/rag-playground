@@ -43,29 +43,29 @@ function ComparisonSide({
   data: SideData;
 }) {
   const badge = {
-    emerald: "border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/30 dark:text-emerald-300",
-    indigo: "border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/30 dark:text-indigo-300",
+    emerald: "border-emerald-700 bg-emerald-950/50 text-emerald-300",
+    indigo:  "border-indigo-700 bg-indigo-950/50 text-indigo-300",
   }[color];
 
   const docScore = {
-    emerald: "text-emerald-600 dark:text-emerald-400",
-    indigo: "text-indigo-600 dark:text-indigo-400",
+    emerald: "text-emerald-400",
+    indigo:  "text-indigo-400",
   }[color];
 
   const entity = {
-    emerald: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300",
-    indigo: "bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300",
+    emerald: "bg-emerald-950/50 text-emerald-300",
+    indigo:  "bg-indigo-950/50 text-indigo-300",
   }[color];
 
   return (
-    <div className="flex flex-col gap-3 rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900/30">
+    <div className="flex flex-col gap-3 rounded-xl border border-border bg-bg-subtle p-4">
       <span className={`inline-flex w-fit items-center rounded border px-2.5 py-1 text-xs font-semibold ${badge}`}>
         {label}
       </span>
 
       {/* Retrieved docs */}
       <div>
-        <p className="mb-1 text-[11px] uppercase tracking-wider text-zinc-400 dark:text-zinc-600">
+        <p className="mb-1 text-[11px] uppercase tracking-wider text-fg-subtle">
           Retrieved · {data.docs.length} docs
           {data.embeddingMs != null && data.embeddingMs > 0 && (
             <span className="ml-2">embed {data.embeddingMs}ms</span>
@@ -74,8 +74,8 @@ function ComparisonSide({
         </p>
         <div className="space-y-1">
           {data.docs.map((d) => (
-            <div key={d.file_name} className="flex items-center gap-2 rounded bg-zinc-50 px-2 py-1 dark:bg-zinc-800/40">
-              <span className="font-mono text-[11px] text-zinc-700 dark:text-zinc-300">
+            <div key={d.file_name} className="flex items-center gap-2 rounded bg-bg-input px-2 py-1">
+              <span className="font-mono text-[11px] text-fg">
                 {d.file_name.replace(".md", "")}
               </span>
               {d.similarity != null && (
@@ -105,17 +105,17 @@ function ComparisonSide({
       )}
 
       {/* Answer */}
-      <div className="min-h-[120px] rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/40">
+      <div className="min-h-[120px] rounded-lg bg-bg-input p-3">
         {data.answer ? (
-          <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
+          <p className="whitespace-pre-wrap text-sm leading-relaxed text-fg">
             {data.answer}
             {data.isStreaming && (
-              <span className="ml-1 inline-block h-4 w-0.5 animate-pulse bg-zinc-400" />
+              <span className="ml-1 inline-block h-4 w-0.5 animate-pulse bg-fg-subtle" />
             )}
           </p>
         ) : (
           <div className="flex h-full min-h-[80px] items-center justify-center">
-            <span className="text-xs text-zinc-400 dark:text-zinc-600">
+            <span className="text-xs text-fg-subtle">
               {data.isStreaming ? "Generating..." : "Waiting..."}
             </span>
           </div>
@@ -124,10 +124,10 @@ function ComparisonSide({
 
       {/* Mini metrics */}
       {data.inputTokens > 0 && (
-        <div className="flex gap-3 font-mono text-[11px] text-zinc-400 dark:text-zinc-600">
+        <div className="flex gap-3 font-mono text-[11px] text-fg-subtle">
           <span>{data.inputTokens} in</span>
           <span>{data.outputTokens} out</span>
-          <span className="text-emerald-600 dark:text-emerald-700">
+          <span className="text-emerald-500">
             ${data.costUsd < 0.001 ? data.costUsd.toFixed(5) : data.costUsd.toFixed(4)}
           </span>
         </div>

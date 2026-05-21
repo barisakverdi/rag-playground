@@ -24,9 +24,9 @@ const PROMPTS = [
 ] as const;
 
 const METHOD_STYLES = {
-  graph: "bg-indigo-50 text-indigo-700 border-indigo-200 dark:bg-indigo-950 dark:text-indigo-300 dark:border-indigo-800",
-  semantic: "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800",
-  hybrid: "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-800",
+  graph:    "bg-indigo-950/50 text-indigo-300 border-indigo-700",
+  semantic: "bg-emerald-950/50 text-emerald-300 border-emerald-700",
+  hybrid:   "bg-amber-950/50 text-amber-300 border-amber-700",
 };
 
 interface Props {
@@ -37,21 +37,21 @@ interface Props {
 export function PromptLibrary({ onSelect, activeQuery }: Props) {
   return (
     <div className="flex flex-col gap-1">
-      <p className="mb-2 text-xs font-medium uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+      <p className="mb-2 text-xs font-medium uppercase tracking-wider text-fg-subtle">
         20 Sample Queries
       </p>
       {PROMPTS.map((p) => (
         <button
           key={p.id}
           onClick={() => onSelect(p.query)}
-          className={`group flex items-start gap-2 rounded-lg px-3 py-2.5 text-left text-xs transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 ${
-            activeQuery === p.query ? "bg-zinc-100 dark:bg-zinc-800" : ""
+          className={`group flex items-start gap-2 rounded-lg px-3 py-2.5 text-left text-xs transition-colors hover:bg-bg-subtle ${
+            activeQuery === p.query ? "bg-bg-subtle" : ""
           }`}
         >
           <span className={`mt-0.5 shrink-0 rounded border px-1.5 py-0.5 font-mono text-[10px] ${METHOD_STYLES[p.method]}`}>
             {p.method}
           </span>
-          <span className="leading-relaxed text-zinc-600 group-hover:text-zinc-900 dark:text-zinc-300 dark:group-hover:text-zinc-100">
+          <span className="leading-relaxed text-fg-muted group-hover:text-fg">
             {p.query}
           </span>
         </button>

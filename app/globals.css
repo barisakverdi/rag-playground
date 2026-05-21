@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
-:root {
-  /* Light mode */
-  --bg:        255 255 255;
-  --bg-subtle: 244 244 245;
-  --border:    228 228 231;
-  --fg:        9 9 11;
-  --fg-muted:  63 63 70;
-  --fg-subtle: 113 113 122;
+/* Coffee — default dark theme (espresso bg, crema text, pour accent) */
+:root,
+[data-theme="coffee"] {
+  --bg:         26 15 10;     /* #1a0f0a espresso */
+  --bg-subtle:  36 20 12;     /* card / panel */
+  --bg-input:   31 18 9;      /* inputs / code blocks */
+  --border:     74 45 26;     /* #4a2d1a */
+  --fg:         245 230 200;  /* #f5e6c8 crema */
+  --fg-muted:   196 172 136;  /* body copy */
+  --fg-subtle:  122 90 58;    /* placeholder / meta */
+  --accent:     200 134 10;   /* #c8860a pour */
+  --accent-fg:  26 15 10;     /* text on accent bg */
+  --accent-h:   218 152 20;   /* accent hover */
 }
 
-.dark {
-  /* Dark Contrast palette */
-  --bg:        10 10 10;
-  --bg-subtle: 17 17 17;
-  --border:    39 39 42;
-  --fg:        255 255 255;
-  --fg-muted:  161 161 170;
-  --fg-subtle: 82 82 91;
+/* Dark Contrast — secondary theme (zinc-950 bg, white text, indigo accent) */
+[data-theme="contrast"] {
+  --bg:         10 10 10;
+  --bg-subtle:  17 17 17;
+  --bg-input:   24 24 27;
+  --border:     39 39 42;
+  --fg:         255 255 255;
+  --fg-muted:   161 161 170;
+  --fg-subtle:  82 82 91;
+  --accent:     99 102 241;
+  --accent-fg:  255 255 255;
+  --accent-h:   129 140 248;
 }
+
+/* Semantic utility classes — all support hover:, focus:, group-hover:, placeholder: etc. */
+@utility bg-bg        { background-color: rgb(var(--bg)); }
+@utility bg-bg-subtle { background-color: rgb(var(--bg-subtle)); }
+@utility bg-bg-input  { background-color: rgb(var(--bg-input)); }
+@utility bg-fg-subtle { background-color: rgb(var(--fg-subtle)); }
+@utility bg-fg-muted  { background-color: rgb(var(--fg-muted)); }
+@utility bg-accent    { background-color: rgb(var(--accent)); }
+@utility bg-accent-h  { background-color: rgb(var(--accent-h)); }
+
+@utility text-fg        { color: rgb(var(--fg)); }
+@utility text-fg-muted  { color: rgb(var(--fg-muted)); }
+@utility text-fg-subtle { color: rgb(var(--fg-subtle)); }
+@utility text-accent-fg { color: rgb(var(--accent-fg)); }
+
+@utility border-border    { border-color: rgb(var(--border)); }
+@utility border-fg-subtle { border-color: rgb(var(--fg-subtle)); }
+@utility border-fg-muted  { border-color: rgb(var(--fg-muted)); }
+@utility border-accent    { border-color: rgb(var(--accent)); }
 
 body {
   background-color: rgb(var(--bg));
@@ -28,7 +54,6 @@ body {
   font-family: var(--font-geist-sans), Arial, sans-serif;
 }
 
-/* Smooth theme transition */
 *, *::before, *::after {
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.1s ease;
 }
