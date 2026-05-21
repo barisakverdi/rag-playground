@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default async function HomePage({
   params,
@@ -19,6 +20,7 @@ export default async function HomePage({
             rag.barisakverdi.com
           </span>
           <div className="flex items-center gap-3">
+            <LanguageSwitcher />
             <ThemeToggle />
             <a
               href="https://github.com/barisakverdi/rag-playground"

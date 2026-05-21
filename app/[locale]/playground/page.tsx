@@ -8,6 +8,7 @@ import { DecisionLog } from "@/components/DecisionLog";
 import { MetricsPanel } from "@/components/MetricsPanel";
 import { ComparisonPanel } from "@/components/ComparisonPanel";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { streamSSE, SSEEvent } from "@/lib/sse";
 
 type Mode = "single" | "compare";
@@ -156,6 +157,7 @@ export default function PlaygroundPage() {
             <span className="hidden font-mono text-xs text-fg-subtle lg:inline">
               {t("corpusLabel")}
             </span>
+            <LanguageSwitcher />
             <ThemeToggle />
             <a
               href="https://github.com/barisakverdi/rag-playground"
