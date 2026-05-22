@@ -8,7 +8,7 @@ import { getSupabase } from "@/lib/supabase";
 export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
-  const { query } = await req.json();
+  const { query, locale } = await req.json();
   if (!query || typeof query !== "string") {
     return new Response(JSON.stringify({ error: "query required" }), { status: 400 });
   }
@@ -97,7 +97,8 @@ export async function POST(req: NextRequest) {
           controller.enqueue(
             encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: chunk })}\n\n`)
           );
-        }
+        },
+        locale ?? "en"
       );
       inputTokens = iT;
       outputTokens = oT;

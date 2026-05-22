@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -55,7 +56,10 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full antialiased">
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+            <AnalyticsBeacon />
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -180,7 +180,29 @@
       "ariaLabel": "Toggle theme"
     },
     "PromptLibrary": {
-      "title": "20 Sample Queries"
+      "title": "20 Sample Queries",
+      "prompts": {
+        "1":  "What impact did NorthBrew Supplies have across branches in Q1 2024?",
+        "2":  "Which branches were affected by the oat milk shortage and what were the consequences?",
+        "3":  "Had NorthBrew Supplies caused problems before the Q1 2024 incident?",
+        "4":  "What steps were recommended to reduce dependency on NorthBrew Supplies?",
+        "5":  "Which branches experienced espresso machine failures and what was the common cause?",
+        "6":  "What is the relationship between the equipment fault at Leeds and the one at Manchester?",
+        "7":  "Is there a risk that espresso machine failures could recur at other branches?",
+        "8":  "Which branches have outstanding maintenance items and what is the highest risk?",
+        "9":  "What operational problems followed the mobile ordering rollout?",
+        "10": "The oat milk modifier bug lasted two weeks — what was the customer impact?",
+        "11": "How did the mobile ordering rollout timing compound other operational issues?",
+        "12": "What should be done differently before rolling out mobile ordering to Midlands?",
+        "13": "Which branches had staffing shortages in Q1 2024?",
+        "14": "How did understaffing compound the equipment failure at Leeds Central?",
+        "15": "What are the staffing risks going into Easter trading?",
+        "16": "Where do staffing issues and customer complaints overlap?",
+        "17": "How did the espresso machine fault lead to drink quality complaints?",
+        "18": "Which customer complaints were caused by supplier issues versus branch operational failures?",
+        "19": "What is the most significant systemic risk facing the North England region?",
+        "20": "Trace the full chain from the Wakefield depot failure to the Google Reviews impact"
+      }
     },
     "ComparisonPanel": {
       "semanticLabel": "Semantic Search",

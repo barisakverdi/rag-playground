@@ -8,7 +8,7 @@ import { getSupabase } from "@/lib/supabase";
 export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
-  const { query } = await req.json();
+  const { query, locale } = await req.json();
   if (!query || typeof query !== "string") {
     return new Response(JSON.stringify({ error: "query required" }), { status: 400 });
   }
@@ -75,13 +75,13 @@ export async function POST(req: NextRequest) {
 
       await Promise.all([
         streamAnswer(query, semanticDocs, (chunk) =>
-          send({ type: "chunk", side: "semantic", text: chunk })
+          send({ type: "chunk", side: "semantic", text: chunk }), locale ?? "en"
         ).then(({ inputTokens, outputTokens }) => {
           semanticIn = inputTokens;
           semanticOut = outputTokens;
         }),
         streamAnswer(query, graphDocs, (chunk) =>
-          send({ type: "chunk", side: "graph", text: chunk })
+          send({ type: "chunk", side: "graph", text: chunk }), locale ?? "en"
         ).then(({ inputTokens, outputTokens }) => {
           graphIn = inputTokens;
           graphOut = outputTokens;

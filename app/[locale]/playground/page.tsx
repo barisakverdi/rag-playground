@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { DecisionLog } from "@/components/DecisionLog";
@@ -52,6 +52,7 @@ interface CompareResult {
 
 export default function PlaygroundPage() {
   const t = useTranslations("Playground");
+  const locale = useLocale();
   const [query, setQuery] = useState("");
   const [mode, setMode] = useState<Mode>("single");
   const [status, setStatus] = useState<Status>("idle");
@@ -86,7 +87,7 @@ export default function PlaygroundPage() {
           costUsd: 0,
         };
 
-        await streamSSE("/api/query", { query }, (event: SSEEvent) => {
+        await streamSSE("/api/query", { query, locale }, (event: SSEEvent) => {
           if (event.type === "meta") {
             result = { ...result, decision: event.decision, retrievedDocs: event.retrievedDocs ?? [], graphEntities: event.graphEntities ?? [], timings: event.timings ?? { embeddingMs: 0, semanticMs: 0, graphMs: 0 } };
             setSingleResult({ ...result });
@@ -108,7 +109,7 @@ export default function PlaygroundPage() {
           graph: { docs: [], matchedEntities: [], retrievalMs: 0, answer: "", isStreaming: false, inputTokens: 0, outputTokens: 0, costUsd: 0 },
         };
 
-        await streamSSE("/api/compare", { query }, (event: SSEEvent) => {
+        await streamSSE("/api/compare", { query, locale }, (event: SSEEvent) => {
           if (event.type === "meta") {
             result = { ...result, decision: event.decision, semantic: { ...result.semantic, docs: event.semantic?.docs ?? [], embeddingMs: event.semantic?.embeddingMs ?? 0, retrievalMs: event.semantic?.retrievalMs ?? 0, isStreaming: true }, graph: { ...result.graph, docs: event.graph?.docs ?? [], matchedEntities: event.graph?.matchedEntities ?? [], retrievalMs: event.graph?.retrievalMs ?? 0, isStreaming: true } };
             setCompareResult({ ...result });

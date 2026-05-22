@@ -56,7 +56,7 @@ export function PromptLibrary({ onSelect, activeQuery }: Props) {
             {p.method}
           </span>
           <span className="leading-relaxed text-fg-muted group-hover:text-fg">
-            {p.query}
+            {t(`prompts.${p.id}`)}
           </span>
         </button>
       ))}

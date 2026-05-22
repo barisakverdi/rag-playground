@@ -12,7 +12,8 @@ export interface RetrievedDoc {
 export async function streamAnswer(
   query: string,
   docs: RetrievedDoc[],
-  onChunk: (text: string) => void
+  onChunk: (text: string) => void,
+  locale = "en"
 ): Promise<{ inputTokens: number; outputTokens: number }> {
   const context = docs
     .map((d, i) => `[Document ${i + 1}: ${d.file_name}]\n${d.content}`)
@@ -21,7 +22,7 @@ export async function streamAnswer(
   const systemPrompt = `You are an AI assistant answering questions about BrewPulse Coffee's North England regional operations.
 Answer based ONLY on the provided documents. Be concise and specific.
 If the documents don't contain enough information to answer, say so clearly.
-Reference document names when citing specific facts.`;
+Reference document names when citing specific facts.${locale === "tr" ? "\n\nPlease respond in Turkish." : ""}`;
 
   let inputTokens = 0;
   let outputTokens = 0;

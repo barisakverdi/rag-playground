@@ -180,7 +180,29 @@
       "ariaLabel": "Temayı değiştir"
     },
     "PromptLibrary": {
-      "title": "20 Örnek Sorgu"
+      "title": "20 Örnek Sorgu",
+      "prompts": {
+        "1":  "NorthBrew Supplies'ın Q1 2024'te şubelere etkisi ne oldu?",
+        "2":  "Yulaf sütü kıtlığından hangi şubeler etkilendi ve sonuçları ne oldu?",
+        "3":  "NorthBrew Supplies, Q1 2024 olayından önce de sorun çıkarmış mıydı?",
+        "4":  "NorthBrew Supplies bağımlılığını azaltmak için hangi adımlar önerildi?",
+        "5":  "Hangi şubelerde espresso makinesi arızası yaşandı ve ortak neden neydi?",
+        "6":  "Leeds ve Manchester'daki ekipman arızaları arasındaki ilişki nedir?",
+        "7":  "Espresso makinesi arızalarının diğer şubelerde tekrar etme riski var mı?",
+        "8":  "Hangi şubelerde bekleyen bakım işleri var ve en yüksek risk nedir?",
+        "9":  "Mobil sipariş lansmanının ardından ne tür operasyonel sorunlar ortaya çıktı?",
+        "10": "Yulaf sütü modifier hatası iki hafta sürdü — müşteri etkisi ne oldu?",
+        "11": "Mobil sipariş lansmanının zamanlaması diğer operasyonel sorunları nasıl ağırlaştırdı?",
+        "12": "Midlands'a mobil sipariş açılmadan önce ne farklı yapılmalıydı?",
+        "13": "Q1 2024'te hangi şubelerde personel sıkıntısı yaşandı?",
+        "14": "Yetersiz personel, Leeds Central'daki ekipman arızasını nasıl ağırlaştırdı?",
+        "15": "Paskalya ticaret dönemine girerken personel riskleri neler?",
+        "16": "Personel sorunları ile müşteri şikayetleri nerede örtüşüyor?",
+        "17": "Espresso makinesi arızası içecek kalitesi şikayetlerine nasıl yol açtı?",
+        "18": "Hangi müşteri şikayetleri tedarikçi sorunlarından, hangisi şube operasyonel hatalarından kaynaklandı?",
+        "19": "Kuzey İngiltere bölgesinin karşılaştığı en önemli sistemik risk nedir?",
+        "20": "Wakefield depo arızasından Google Reviews etkisine kadar tam zinciri takip edin"
+      }
     },
     "ComparisonPanel": {
       "semanticLabel": "Semantik Arama",
