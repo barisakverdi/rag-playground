@@ -32,7 +32,7 @@ const METHOD_STYLES = {
 };
 
 interface Props {
-  onSelect: (query: string) => void;
+  onSelect: (query: string, method: string) => void;
   activeQuery?: string;
 }
 
@@ -47,7 +47,7 @@ export function PromptLibrary({ onSelect, activeQuery }: Props) {
       {PROMPTS.map((p) => (
         <button
           key={p.id}
-          onClick={() => onSelect(p.query)}
+          onClick={() => onSelect(p.query, p.method)}
           className={`group flex items-start gap-2 rounded-lg px-3 py-2.5 text-left text-xs transition-colors hover:bg-bg-subtle ${
             activeQuery === p.query ? "bg-bg-subtle" : ""
           }`}

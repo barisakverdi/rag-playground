@@ -1,0 +1,161 @@
+<svg width="960" height="830" viewBox="0 0 960 830" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace,'Cascadia Code','Source Code Pro',monospace">
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#4a2d1a"/>
+    </marker>
+    <marker id="arrAccent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#c8860a"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#16a34a"/>
+    </marker>
+    <marker id="arrIndigo" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#4f46e5"/>
+    </marker>
+    <marker id="arrMuted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#57534e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="700" fill="#09060400" rx="0"/>
+  <rect width="960" height="700" fill="#0a0705"/>
+
+  <!-- Title -->
+  <text x="480" y="27" text-anchor="middle" fill="#3d2410" font-size="10" letter-spacing="4">ADAPTIVE RAG PLAYGROUND — SYSTEM ARCHITECTURE</text>
+
+  <!-- ── BROWSER ────────────────────────────────── -->
+  <rect x="330" y="44" width="300" height="68" rx="8" fill="#1a0f0a" stroke="#c8860a" stroke-width="1.5"/>
+  <text x="480" y="65"  text-anchor="middle" fill="#c8860a"  font-size="9"  letter-spacing="2.5">CLIENT</text>
+  <text x="480" y="88"  text-anchor="middle" fill="#f5e6c8"  font-size="14" font-weight="bold">Playground UI</text>
+  <text x="480" y="105" text-anchor="middle" fill="#7a5a3a"  font-size="10">Next.js 16 · App Router · React 19</text>
+
+  <!-- Browser → Router -->
+  <line x1="480" y1="112" x2="480" y2="146" stroke="#4a2d1a" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="488" y="133" fill="#7a5a3a" font-size="9">query + locale</text>
+
+  <!-- ── AUTO ROUTER ─────────────────────────────── -->
+  <rect x="268" y="149" width="424" height="84" rx="8" fill="#1a0f0a" stroke="#c8860a" stroke-width="1.5"/>
+  <text x="480" y="170" text-anchor="middle" fill="#c8860a"  font-size="9"  letter-spacing="2.5">HEURISTIC ROUTER</text>
+  <text x="480" y="194" text-anchor="middle" fill="#f5e6c8"  font-size="14" font-weight="bold">Auto Router</text>
+  <text x="480" y="212" text-anchor="middle" fill="#c4ac88"  font-size="10">keyword signals · named entity count</text>
+  <text x="480" y="227" text-anchor="middle" fill="#7a5a3a"  font-size="10">→  semantic  /  graph  /  hybrid</text>
+
+  <!-- Router → Semantic -->
+  <path d="M 352 233 L 218 274" stroke="#16a34a" stroke-width="1.5" fill="none" marker-end="url(#arrGreen)"/>
+  <text x="247" y="260" fill="#16a34a" font-size="9">semantic</text>
+
+  <!-- Router → Graph -->
+  <path d="M 608 233 L 742 274" stroke="#4f46e5" stroke-width="1.5" fill="none" marker-end="url(#arrIndigo)"/>
+  <text x="651" y="260" fill="#6366f1" font-size="9">graph</text>
+
+  <!-- ── SEMANTIC PATH ───────────────────────────── -->
+  <rect x="36" y="277" width="364" height="148" rx="8" fill="#052e16" stroke="#166534" stroke-width="1.5"/>
+  <text x="218" y="299" text-anchor="middle" fill="#86efac" font-size="9" letter-spacing="2.5">SEMANTIC PATH</text>
+  <text x="218" y="323" text-anchor="middle" fill="#f5e6c8" font-size="13" font-weight="bold">Voyage AI  voyage-3</text>
+  <text x="218" y="340" text-anchor="middle" fill="#86efac" font-size="10">text → embedding  ·  1024 dims</text>
+  <line x1="56" y1="352" x2="380" y2="352" stroke="#166534" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="218" y="373" text-anchor="middle" fill="#f5e6c8" font-size="13" font-weight="bold">pgvector  ·  Supabase</text>
+  <text x="218" y="390" text-anchor="middle" fill="#86efac" font-size="10">cosine similarity  ·  top-k retrieval</text>
+  <text x="218" y="413" text-anchor="middle" fill="#4ade80" font-size="10">8 docs  ·  chunked corpus  ·  PostgreSQL</text>
+
+  <!-- ── GRAPH PATH ──────────────────────────────── -->
+  <rect x="560" y="277" width="364" height="148" rx="8" fill="#1e1b4b" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="742" y="299" text-anchor="middle" fill="#a5b4fc" font-size="9" letter-spacing="2.5">GRAPH PATH</text>
+  <text x="742" y="323" text-anchor="middle" fill="#f5e6c8" font-size="13" font-weight="bold">graph.json</text>
+  <text x="742" y="340" text-anchor="middle" fill="#a5b4fc" font-size="10">201 entities  ·  175 relationships</text>
+  <line x1="580" y1="352" x2="904" y2="352" stroke="#4338ca" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="742" y="373" text-anchor="middle" fill="#f5e6c8" font-size="13" font-weight="bold">Knowledge Graph Search</text>
+  <text x="742" y="390" text-anchor="middle" fill="#a5b4fc" font-size="10">follows entity links across docs  ·  2 hops</text>
+  <text x="742" y="413" text-anchor="middle" fill="#818cf8" font-size="10">extracted by custom Claude tool-use script</text>
+
+  <!-- Semantic → Merge -->
+  <path d="M 310 425 L 396 462" stroke="#16a34a" stroke-width="1.5" fill="none" marker-end="url(#arrGreen)"/>
+
+  <!-- Graph → Merge -->
+  <path d="M 650 425 L 564 462" stroke="#4f46e5" stroke-width="1.5" fill="none" marker-end="url(#arrIndigo)"/>
+
+  <!-- ── MERGE ───────────────────────────────────── -->
+  <rect x="312" y="465" width="336" height="56" rx="8" fill="#1a0f0a" stroke="#4a2d1a" stroke-width="1.5"/>
+  <text x="480" y="486" text-anchor="middle" fill="#7a5a3a"  font-size="9"  letter-spacing="2.5">CONTEXT ASSEMBLY</text>
+  <text x="480" y="508" text-anchor="middle" fill="#f5e6c8"  font-size="13" font-weight="bold">Merge &amp; Deduplicate</text>
+
+  <!-- Merge → Claude -->
+  <line x1="480" y1="521" x2="480" y2="554" stroke="#4a2d1a" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="488" y="541" fill="#7a5a3a" font-size="9">top-k docs</text>
+
+  <!-- ── CLAUDE ──────────────────────────────────── -->
+  <rect x="268" y="557" width="424" height="76" rx="8" fill="#1a0f0a" stroke="#c8860a" stroke-width="2"/>
+  <text x="480" y="578" text-anchor="middle" fill="#c8860a"  font-size="9"  letter-spacing="2.5">LANGUAGE MODEL</text>
+  <text x="480" y="603" text-anchor="middle" fill="#f5e6c8"  font-size="15" font-weight="bold">Claude Haiku 4.5</text>
+  <text x="480" y="623" text-anchor="middle" fill="#c4ac88"  font-size="10">streaming  ·  SSE  ·  max 1024 tokens  ·  ~$0.002 / query</text>
+
+  <!-- SSE return (right-side curved arrow back to Browser) -->
+  <path d="M 692 595 Q 928 595 928 78 Q 928 56 630 56"
+        stroke="#c8860a" stroke-width="1.5" fill="none"
+        stroke-dasharray="7,4" marker-end="url(#arrAccent)"/>
+  <text x="942" y="340" text-anchor="middle" fill="#c8860a" font-size="9"
+        transform="rotate(90,942,340)">Streaming SSE response</text>
+
+  <!-- ── BUILD-TIME footnote ────────────────────── -->
+  <rect x="36" y="480" width="252" height="90" rx="6"
+        fill="none" stroke="#3d3835" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="162" y="499" text-anchor="middle" fill="#57534e" font-size="8" letter-spacing="2">BUILD-TIME · ONE-OFF</text>
+  <text x="162" y="521" text-anchor="middle" fill="#78716c" font-size="11" font-weight="bold">Graph Extractor</text>
+  <text x="162" y="537" text-anchor="middle" fill="#57534e" font-size="9">Claude tool use → graph.json  ·  $0.11</text>
+  <line x1="50" y1="547" x2="274" y2="547" stroke="#3d3835" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="162" y="563" text-anchor="middle" fill="#78716c" font-size="11" font-weight="bold">Corpus Embedder</text>
+  <text x="162" y="579" text-anchor="middle" fill="#57534e" font-size="9">Voyage AI voyage-3 → Supabase  ·  $0.0004</text>
+
+  <!-- Extractor → graph.json (dashed) -->
+  <path d="M 288 521 L 564 364"
+        stroke="#3d3835" stroke-width="1" fill="none"
+        stroke-dasharray="4,3" marker-end="url(#arrMuted)"/>
+  <!-- Embedder → Supabase (dashed) -->
+  <path d="M 288 563 L 200 425"
+        stroke="#3d3835" stroke-width="1" fill="none"
+        stroke-dasharray="4,3" marker-end="url(#arrMuted)"/>
+
+  <!-- Bottom cost note -->
+  <text x="480" y="668" text-anchor="middle" fill="#3d2410" font-size="9" letter-spacing="1">
+    Build cost: $0.50 total  ·  Query cost: ~$0.002  ·  Hosted on Vercel free tier  ·  rag.barisakverdi.com
+  </text>
+
+  <!-- ── GLOSSARY ─────────────────────────────────── -->
+  <line x1="36" y1="685" x2="924" y2="685" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="480" y="703" text-anchor="middle" fill="#4a2d1a" font-size="9" letter-spacing="3">GLOSSARY</text>
+
+  <!-- Row 1 -->
+  <!-- Col 1 -->
+  <text x="50"  y="722" fill="#c4ac88" font-size="10" font-weight="bold">Embedding</text>
+  <text x="50"  y="737" fill="#7a5a3a" font-size="9">Converting text into numbers (vectors) that</text>
+  <text x="50"  y="749" fill="#7a5a3a" font-size="9">capture meaning — similar texts → similar vectors.</text>
+
+  <!-- Col 2 -->
+  <text x="350" y="722" fill="#c4ac88" font-size="10" font-weight="bold">pgvector</text>
+  <text x="350" y="737" fill="#7a5a3a" font-size="9">A PostgreSQL extension that stores vectors and</text>
+  <text x="350" y="749" fill="#7a5a3a" font-size="9">finds the most similar ones by cosine distance.</text>
+
+  <!-- Col 3 -->
+  <text x="650" y="722" fill="#c4ac88" font-size="10" font-weight="bold">Cosine Similarity</text>
+  <text x="650" y="737" fill="#7a5a3a" font-size="9">A score (0–1) measuring how closely two text</text>
+  <text x="650" y="749" fill="#7a5a3a" font-size="9">embeddings match in meaning. 1.0 = identical.</text>
+
+  <!-- Row 2 -->
+  <!-- Col 1 -->
+  <text x="50"  y="773" fill="#c4ac88" font-size="10" font-weight="bold">Knowledge Graph</text>
+  <text x="50"  y="788" fill="#7a5a3a" font-size="9">A network of named entities (people, branches,</text>
+  <text x="50"  y="800" fill="#7a5a3a" font-size="9">incidents) linked by relationships like "caused_by".</text>
+
+  <!-- Col 2 -->
+  <text x="350" y="773" fill="#c4ac88" font-size="10" font-weight="bold">SSE (Server-Sent Events)</text>
+  <text x="350" y="788" fill="#7a5a3a" font-size="9">A protocol for streaming data from server to browser</text>
+  <text x="350" y="800" fill="#7a5a3a" font-size="9">in real time — so the answer appears word by word.</text>
+
+  <!-- Col 3 -->
+  <text x="650" y="773" fill="#c4ac88" font-size="10" font-weight="bold">Heuristic Router</text>
+  <text x="650" y="788" fill="#7a5a3a" font-size="9">A rule-based classifier (no AI) that reads the query</text>
+  <text x="650" y="800" fill="#7a5a3a" font-size="9">and picks the best retrieval method in &lt;1ms.</text>
+
+</svg>

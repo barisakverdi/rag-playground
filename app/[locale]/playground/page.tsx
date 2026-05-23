@@ -11,6 +11,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { streamSSE, SSEEvent } from "@/lib/sse";
 
+const Q20_QUERY = "Trace the full chain from the Wakefield depot failure to the Google Reviews impact";
+
 type Mode = "single" | "compare";
 type Status = "idle" | "loading" | "done" | "error";
 
@@ -62,10 +64,15 @@ export default function PlaygroundPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const abortRef = useRef<AbortController | null>(null);
 
-  const handleSelect = useCallback((q: string) => { setQuery(q); }, []);
+  const handleSelect = useCallback((q: string, method: string) => {
+    setQuery(q);
+    if (method === "graph" || method === "hybrid") setMode("compare");
+  }, []);
 
-  const handleSubmit = useCallback(async () => {
-    if (!query.trim() || status === "loading") return;
+  const handleSubmit = useCallback(async (queryOverride?: string, modeOverride?: Mode) => {
+    const q = queryOverride ?? query;
+    const m = modeOverride ?? mode;
+    if (!q.trim() || status === "loading") return;
     abortRef.current?.abort();
     abortRef.current = new AbortController();
 
@@ -75,7 +82,7 @@ export default function PlaygroundPage() {
     setCompareResult(null);
 
     try {
-      if (mode === "single") {
+      if (m === "single") {
         let result: SingleResult = {
           decision: { method: "", reason: "", signals: [] },
           retrievedDocs: [],
@@ -87,7 +94,7 @@ export default function PlaygroundPage() {
           costUsd: 0,
         };
 
-        await streamSSE("/api/query", { query, locale }, (event: SSEEvent) => {
+        await streamSSE("/api/query", { query: q, locale }, (event: SSEEvent) => {
           if (event.type === "meta") {
             result = { ...result, decision: event.decision, retrievedDocs: event.retrievedDocs ?? [], graphEntities: event.graphEntities ?? [], timings: event.timings ?? { embeddingMs: 0, semanticMs: 0, graphMs: 0 } };
             setSingleResult({ ...result });
@@ -109,7 +116,7 @@ export default function PlaygroundPage() {
           graph: { docs: [], matchedEntities: [], retrievalMs: 0, answer: "", isStreaming: false, inputTokens: 0, outputTokens: 0, costUsd: 0 },
         };
 
-        await streamSSE("/api/compare", { query, locale }, (event: SSEEvent) => {
+        await streamSSE("/api/compare", { query: q, locale }, (event: SSEEvent) => {
           if (event.type === "meta") {
             result = { ...result, decision: event.decision, semantic: { ...result.semantic, docs: event.semantic?.docs ?? [], embeddingMs: event.semantic?.embeddingMs ?? 0, retrievalMs: event.semantic?.retrievalMs ?? 0, isStreaming: true }, graph: { ...result.graph, docs: event.graph?.docs ?? [], matchedEntities: event.graph?.matchedEntities ?? [], retrievalMs: event.graph?.retrievalMs ?? 0, isStreaming: true } };
             setCompareResult({ ...result });
@@ -139,6 +146,12 @@ export default function PlaygroundPage() {
       handleSubmit();
     }
   };
+
+  const graphOnlyDocs = compareResult
+    ? compareResult.graph.docs.filter(
+        (d) => !compareResult.semantic.docs.some((s) => s.file_name === d.file_name)
+      )
+    : [];
 
   return (
     <div className="flex h-[100dvh] flex-col overflow-hidden bg-bg">
@@ -215,9 +228,9 @@ export default function PlaygroundPage() {
                 </button>
               </div>
               <button
-                onClick={handleSubmit}
+                onClick={() => handleSubmit()}
                 disabled={!query.trim() || status === "loading"}
-                className="ml-auto rounded-lg bg-accent px-5 py-1.5 text-sm font-semibold text-accent-fg transition-colors hover:bg-accent-h disabled:cursor-not-allowed disabled:opacity-40"
+                className="ml-auto h-11 rounded-lg bg-accent px-6 text-sm font-semibold text-accent-fg transition-colors hover:bg-accent-h disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {status === "loading" ? (
                   <span className="flex items-center gap-2">
@@ -235,6 +248,12 @@ export default function PlaygroundPage() {
               <div className="flex h-full flex-col items-center justify-center text-center">
                 <p className="text-sm text-fg-subtle">{t("emptyTitle")}</p>
                 <p className="mt-1 text-xs text-fg-subtle">{t("emptyHint")}</p>
+                <button
+                  onClick={() => { setQuery(Q20_QUERY); setMode("compare"); handleSubmit(Q20_QUERY, "compare"); }}
+                  className="mt-6 inline-flex items-center gap-1.5 rounded-lg bg-accent px-6 py-2.5 text-sm font-semibold text-accent-fg transition-colors hover:bg-accent-h"
+                >
+                  {t("tryQ20")}
+                </button>
               </div>
             )}
 
@@ -294,6 +313,27 @@ export default function PlaygroundPage() {
                   </div>
                 </div>
                 <ComparisonPanel semantic={compareResult.semantic} graph={compareResult.graph} />
+                {graphOnlyDocs.length > 0 && (
+                  <div className="rounded-xl border border-indigo-800/40 bg-indigo-950/20 p-4">
+                    <p className="mb-2 text-xs font-medium uppercase tracking-wider text-indigo-400/70">
+                      {t("retrievalDiffLabel")}
+                    </p>
+                    <p className="mb-2 text-sm text-fg-muted">
+                      {t("graphFoundExtra", { count: graphOnlyDocs.length })}
+                    </p>
+                    <div className="mb-2 flex flex-wrap gap-1.5">
+                      {graphOnlyDocs.map((doc) => (
+                        <span
+                          key={doc.file_name}
+                          className="rounded border border-indigo-700 bg-indigo-950/50 px-2 py-0.5 font-mono text-[11px] text-indigo-300"
+                        >
+                          {doc.file_name.replace(".md", "")}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-xs text-indigo-400/70">{t("graphOnlyNote")}</p>
+                  </div>
+                )}
               </div>
             )}
           </div>

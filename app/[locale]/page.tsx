@@ -13,6 +13,19 @@ export default async function HomePage({
 
   return (
     <div className="flex min-h-screen flex-col bg-bg">
+      {/* Availability banner */}
+      <div className="border-b border-amber-900/30 bg-amber-950/20 px-4 py-2 text-center">
+        <p className="text-xs text-fg-muted">
+          {t("availableBanner")}
+          <a
+            href="mailto:barisakverdi@hotmail.com"
+            className="ml-2 font-medium text-accent transition-colors hover:text-accent-h"
+          >
+            {t("availableCta")}
+          </a>
+        </p>
+      </div>
+
       {/* Nav */}
       <nav className="border-b border-border px-4 py-3 sm:px-6">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
@@ -22,6 +35,14 @@ export default async function HomePage({
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
             <ThemeToggle />
+            <a
+              href="https://www.linkedin.com/in/mustafa-baris-akverdi-a5366012/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-fg-muted transition-colors hover:text-fg sm:text-sm"
+            >
+              {t("linkedinLink")}
+            </a>
             <a
               href="https://github.com/barisakverdi/rag-playground"
               target="_blank"
@@ -44,8 +65,11 @@ export default async function HomePage({
           <h1 className="mb-5 text-4xl font-bold tracking-tight text-fg sm:text-5xl lg:text-6xl">
             {t("title")}
           </h1>
-          <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-fg-muted sm:text-lg">
+          <p className="mx-auto mb-5 max-w-2xl text-base leading-relaxed text-fg-muted sm:text-lg">
             {t("subtitle")}
+          </p>
+          <p className="mx-auto mb-10 max-w-2xl text-sm leading-relaxed text-fg-subtle">
+            {t("heroContext")}
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
             <Link
@@ -54,14 +78,12 @@ export default async function HomePage({
             >
               {t("tryDemo")}
             </Link>
-            <a
-              href="https://github.com/barisakverdi/rag-playground"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/dataset#architecture"
               className="inline-flex h-11 w-full items-center justify-center rounded-lg border border-border px-8 text-sm font-medium text-fg-muted transition-colors hover:border-fg-subtle hover:bg-bg-subtle sm:w-auto"
             >
-              {t("viewSource")}
-            </a>
+              {t("dataset.architectureCta")}
+            </Link>
           </div>
         </div>
 
@@ -70,6 +92,68 @@ export default async function HomePage({
           <FeatureCard label={t("features.graphLabel")}   color="indigo"  description={t("features.graphDesc")} />
           <FeatureCard label={t("features.compareLabel")} color="emerald" description={t("features.compareDesc")} />
           <FeatureCard label={t("features.decisionLabel")}color="amber"   description={t("features.decisionDesc")} />
+        </div>
+
+        {/* ── Compare mode preview ── */}
+        <div className="mx-auto mt-10 w-full max-w-5xl">
+          <div className="mb-3 flex items-center gap-2">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-fg-subtle">
+              {t("comparePreview.label")}
+            </span>
+            <span className="rounded border border-border px-2 py-0.5 font-mono text-[10px] text-fg-subtle">
+              {t("comparePreview.sampleBadge")}
+            </span>
+          </div>
+          <div className="overflow-hidden rounded-xl border border-border bg-bg-subtle">
+            {/* Router decision bar */}
+            <div className="flex items-center gap-2 border-b border-border px-4 py-2.5">
+              <span className="font-mono text-[10px] text-fg-subtle">{t("comparePreview.routerLabel")}</span>
+              <span className="rounded border border-indigo-700 bg-indigo-950/50 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase text-indigo-300">
+                graph
+              </span>
+              <span className="font-mono text-[10px] text-fg-subtle">{t("comparePreview.routerReason")}</span>
+            </div>
+            {/* Two columns */}
+            <div className="grid grid-cols-1 divide-y divide-border sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+              {/* Semantic */}
+              <div className="p-4">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="rounded border border-emerald-700 bg-emerald-950/50 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase text-emerald-300">
+                    semantic
+                  </span>
+                  <span className="font-mono text-[10px] text-fg-subtle">3 docs retrieved</span>
+                </div>
+                <p className="text-xs leading-relaxed text-fg-muted">
+                  NorthBrew Supplies experienced delays at the Wakefield depot in early Q1, impacting oat milk deliveries to North England branches. Customer feedback noted supply-related complaints across several locations.
+                </p>
+                <p className="mt-3 font-mono text-[10px] text-emerald-600/70">files: 01, 03, 07</p>
+                <p className="mt-1 font-mono text-[10px] text-fg-subtle">{t("comparePreview.semanticNote")}</p>
+              </div>
+              {/* Graph */}
+              <div className="p-4">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="rounded border border-indigo-700 bg-indigo-950/50 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase text-indigo-300">
+                    graph
+                  </span>
+                  <span className="font-mono text-[10px] text-fg-subtle">4 docs · 2 hops</span>
+                </div>
+                <p className="text-xs leading-relaxed text-fg-muted">
+                  The Wakefield depot systems migration (file 03) caused a 40% oat milk shortfall at Leeds. This made the oat flat white unfulfillable via mobile ordering (file 08), generating a formal complaint and a negative Google Review (file 04).
+                </p>
+                <p className="mt-3 font-mono text-[10px] text-indigo-400/70">files: 01, 03, <span className="text-indigo-300 font-semibold">04</span>, <span className="text-indigo-300 font-semibold">08</span></p>
+                <p className="mt-1 font-mono text-[10px] text-indigo-400/70">{t("comparePreview.graphNote")}</p>
+              </div>
+            </div>
+            {/* Diff callout */}
+            <div className="border-t border-border px-4 py-3">
+              <p className="font-mono text-[10px] text-indigo-300/80">
+                ↳ {t("comparePreview.diffNote")}
+              </p>
+            </div>
+          </div>
+          <p className="mt-2 text-center font-mono text-[10px] text-fg-subtle">
+            {t("comparePreview.caption")}
+          </p>
         </div>
 
         {/* ── Stats ── */}
@@ -94,6 +178,41 @@ export default async function HomePage({
               {t}
             </span>
           ))}
+        </div>
+
+        {/* ── Anthropic certifications ── */}
+        <div className="mx-auto mt-10 w-full max-w-5xl">
+          <p className="mb-3 font-mono text-[10px] uppercase tracking-widest text-fg-subtle">
+            {t("certLabel")}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {CERTS.map((cert) =>
+              cert.url ? (
+                <a
+                  key={cert.name}
+                  href={cert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-subtle px-3 py-1.5 font-mono text-xs text-fg-muted transition-colors hover:border-fg-subtle hover:text-fg"
+                >
+                  <span className="text-emerald-400">✓</span>
+                  {cert.name}
+                  <span className="text-fg-subtle text-[10px]">↗</span>
+                </a>
+              ) : (
+                <span
+                  key={cert.name}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-subtle px-3 py-1.5 font-mono text-xs text-fg-muted"
+                >
+                  <span className="text-emerald-400">✓</span>
+                  {cert.name}
+                </span>
+              )
+            )}
+          </div>
+          <p className="mt-3 font-mono text-[10px] text-fg-subtle">
+            {t("certBuiltWith")}
+          </p>
         </div>
 
         {/* ── Divider ── */}
@@ -208,6 +327,13 @@ const CHAIN = [
   { label: "40% oat milk shortfall at Leeds", file: "files 01, 03" },
   { label: "Mobile oat flat white order unfulfillable", file: "file 08" },
   { label: "Formal complaint + Google Review posted", file: "file 04" },
+];
+
+const CERTS = [
+  { name: "Introduction to Agent Skills",          url: null },
+  { name: "Claude with the Anthropic API",         url: "https://verify.skilljar.com/c/uykazt5g3r7x" },
+  { name: "Introduction to Model Context Protocol", url: "https://verify.skilljar.com/c/pg3cd6xa22z7" },
+  { name: "Claude Code in Action",                  url: "https://verify.skilljar.com/c/5fee8di8fe9k" },
 ];
 
 // ── Components ────────────────────────────────────────────────────────────────

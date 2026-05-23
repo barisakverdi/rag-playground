@@ -27,8 +27,9 @@ export default async function DatasetPage({
               { href: "#causal",      label: t("navCausal") },
               { href: "#entities",    label: t("navEntities") },
               { href: "#queries",     label: t("navQueries") },
-              { href: "#challenges",  label: t("navDesign") },
-              { href: "#methodology", label: t("navMethodology") },
+              { href: "#challenges",    label: t("navDesign") },
+              { href: "#methodology",  label: t("navMethodology") },
+              { href: "#architecture", label: t("navArchitecture") },
             ].map((l) => (
               <a key={l.href} href={l.href} className="shrink-0 font-mono text-xs uppercase tracking-widest text-fg-subtle transition-colors hover:text-fg">
                 {l.label}
@@ -239,6 +240,25 @@ export default async function DatasetPage({
               </div>
             ))}
           </div>
+        </section>
+
+        <div className="border-t border-border" />
+
+        {/* ── Architecture ── */}
+        <section id="architecture" className="py-14">
+          <SectionLabel index="07" />
+          <h2 className="mb-3 text-2xl font-bold text-fg sm:text-3xl">{t("architectureTitle")}</h2>
+          <p className="mb-6 max-w-2xl text-sm leading-relaxed text-fg-muted">{t("architectureDesc")}</p>
+          <div className="overflow-hidden rounded-xl border border-border bg-bg-subtle p-4 sm:p-6">
+            <img
+              src="/architecture.svg"
+              alt="System architecture diagram"
+              className="w-full"
+            />
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-fg-muted">
+            {t("architectureNote")}
+          </p>
         </section>
 
         {/* ── CTA ── */}
