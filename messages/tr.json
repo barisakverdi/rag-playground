@@ -2,6 +2,7 @@
   "Landing": {
     "availableBanner": "Sözleşmeli & Tam Zamanlı Pozisyonlara Açık · AI/ML mühendisliği · RAG sistemleri · retrieval mimarisi · İngiltere merkezli, uzaktan çalışmaya uygun",
     "heroContext": "Gerçek kurumsal bilgi şuna benziyor: olay raporları, tedarikçi güncellemeleri, müşteri geri bildirimleri, personel notları — sistemlere dağılmış, farklı kişiler tarafından yazılmış, hiçbir zaman birlikte sorgulanmak üzere tasarlanmamış.",
+    "heroCorpusTeaser": "BrewPulse Coffee tam olarak bunu simüle ediyor. Bu sekiz belgeden \"Leeds Q1'de neden düşük performans gösterdi?\" sorusunu yanıtlamanın tek yolu hepsini manuel olarak okumak — ya da RAG kullanmak.",
     "availableCta": "İletişime geç →",
     "badge": "Portfolyo demo · YZ geri çağırma araştırması",
     "title": "Adaptive RAG Playground",
@@ -47,7 +48,7 @@
       "chainLabel": "MERKEZI NEDENSEL ZİNCİR — Q20 DEMO ÖNE ÇIKANI",
       "chainNote": "Hiçbir tek belge bu hikayeyi anlatmıyor. Graf geçişi onu yeniden oluşturur; semantik arama 2. ve 3. adımları kaçırır."
     },
-    "certLabel": "ANTHROPİC SERTİFİKALI",
+    "certLabel": "ANTHROPİC SERTİFİKALARIM",
     "certBuiltWith": "Bu proje Claude Code agentic workflow ile geliştirildi · CLAUDE.md bağlam koruması · Claude tool use ile özel extractor",
     "footer": "Mustafa Barış Akverdi tarafından · Kıdemli Oracle APEX/DBA + YZ geliştirici · Reading, İngiltere"
   },

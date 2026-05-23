@@ -43,10 +43,11 @@
 @utility text-fg-subtle { color: rgb(var(--fg-subtle)); }
 @utility text-accent-fg { color: rgb(var(--accent-fg)); }
 
-@utility border-border    { border-color: rgb(var(--border)); }
-@utility border-fg-subtle { border-color: rgb(var(--fg-subtle)); }
-@utility border-fg-muted  { border-color: rgb(var(--fg-muted)); }
-@utility border-accent    { border-color: rgb(var(--accent)); }
+@utility border-border     { border-color: rgb(var(--border)); }
+@utility border-border-dim { border-color: rgb(var(--border) / 0.4); }
+@utility border-fg-subtle  { border-color: rgb(var(--fg-subtle)); }
+@utility border-fg-muted   { border-color: rgb(var(--fg-muted)); }
+@utility border-accent     { border-color: rgb(var(--accent)); }
 
 @utility scrollbar-none {
   scrollbar-width: none;

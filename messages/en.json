@@ -2,6 +2,7 @@
   "Landing": {
     "availableBanner": "Available for Contract & Full-time Roles · AI/ML engineering · RAG systems · retrieval architecture · UK-based, remote-friendly",
     "heroContext": "Real enterprise knowledge looks like this: incident reports, supplier updates, customer feedback, staffing memos — scattered across systems, written by different people, never designed to be queried together.",
+    "heroCorpusTeaser": "BrewPulse Coffee simulates exactly that. The only way to answer \"why did Leeds underperform in Q1?\" from these eight documents is to read all of them manually — or use RAG.",
     "availableCta": "Get in touch →",
     "badge": "Portfolio demo · AI retrieval research",
     "title": "Adaptive RAG Playground",
